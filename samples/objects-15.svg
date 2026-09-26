@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <path id="hamsterBody" d="M128,34 C175,34 205,57 215,95 C225,135 220,185 195,215 C175,238 152,246 128,246 C104,246 81,238 61,215 C36,185 31,135 41,95 C51,57 81,34 128,34 Z"/>
+    <clipPath id="bodyClip">
+      <path d="M128,34 C175,34 205,57 215,95 C225,135 220,185 195,215 C175,238 152,246 128,246 C104,246 81,238 61,215 C36,185 31,135 41,95 C51,57 81,34 128,34 Z"/>
+    </clipPath>
+    
+    <path id="bellyMask" d="M128,122 C140,110 160,105 178,115 C198,126 210,150 205,175 C198,205 168,235 128,235 C88,235 58,205 51,175 C46,150 58,126 78,115 C96,105 116,110 128,122 Z"/>
+    <clipPath id="bellyClip">
+      <path d="M128,122 C140,110 160,105 178,115 C198,126 210,150 205,175 C198,205 168,235 128,235 C88,235 58,205 51,175 C46,150 58,126 78,115 C96,105 116,110 128,122 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="128" cy="242" rx="85" ry="12" fill="#000000" opacity="0.1"/>
+
+  <!-- Ears (Behind Body) -->
+  <g transform="translate(65, 60) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="26" ry="26" fill="#DE812A"/>
+    <ellipse cx="0" cy="0" rx="14" ry="14" fill="#F4B8CD"/>
+    <ellipse cx="2" cy="4" rx="8" ry="8" fill="#D886A2"/>
+  </g>
+  <g transform="translate(191, 60) rotate(25)">
+    <ellipse cx="0" cy="0" rx="26" ry="26" fill="#DE812A"/>
+    <ellipse cx="0" cy="0" rx="14" ry="14" fill="#F4B8CD"/>
+    <ellipse cx="-2" cy="4" rx="8" ry="8" fill="#D886A2"/>
+  </g>
+
+  <!-- Main Body and Layered Shading -->
+  <use href="#hamsterBody" fill="#DE812A"/>
+  <g clip-path="url(#bodyClip)">
+    <circle cx="90" cy="90" r="140" fill="#ED9135"/>
+    <circle cx="70" cy="60" r="70" fill="#F4A556"/>
+    
+    <!-- White Belly and Cheeks -->
+    <use href="#bellyMask" fill="#FDF3E3"/>
+    <g clip-path="url(#bellyClip)">
+      <circle cx="128" cy="170" r="60" fill="#FFFFFF"/>
+      <circle cx="85" cy="135" r="30" fill="#FFFFFF"/>
+      <circle cx="171" cy="135" r="30" fill="#FFFFFF"/>
+      
+      <!-- Soft Cheek Blushes -->
+      <ellipse cx="75" cy="145" rx="20" ry="14" fill="#FFAEC9" opacity="0.4" transform="rotate(-15 75 145)"/>
+      <ellipse cx="181" cy="145" rx="20" ry="14" fill="#FFAEC9" opacity="0.4" transform="rotate(15 181 145)"/>
+    </g>
+  </g>
+
+  <!-- Whiskers -->
+  <g stroke="#2A1B12" stroke-width="2.5" stroke-linecap="round" opacity="0.25">
+    <line x1="55" y1="130" x2="20" y2="120" />
+    <line x1="50" y1="138" x2="15" y2="135" />
+    <line x1="55" y1="146" x2="25" y2="152" />
+    
+    <line x1="201" y1="130" x2="236" y2="120" />
+    <line x1="206" y1="138" x2="241" y2="135" />
+    <line x1="201" y1="146" x2="231" y2="152" />
+  </g>
+
+  <!-- Back Feet -->
+  <g transform="translate(75, 230) rotate(20)">
+    <ellipse cx="0" cy="0" rx="18" ry="11" fill="#F48FB1"/>
+    <circle cx="-14" cy="-4" r="4.5" fill="#F48FB1"/>
+    <circle cx="-8" cy="-10" r="4.5" fill="#F48FB1"/>
+    <circle cx="0" cy="-12" r="4.5" fill="#F48FB1"/>
+  </g>
+  <g transform="translate(181, 230) rotate(-20)">
+    <ellipse cx="0" cy="0" rx="18" ry="11" fill="#F48FB1"/>
+    <circle cx="14" cy="-4" r="4.5" fill="#F48FB1"/>
+    <circle cx="8" cy="-10" r="4.5" fill="#F48FB1"/>
+    <circle cx="0" cy="-12" r="4.5" fill="#F48FB1"/>
+  </g>
+
+  <!-- Cute Eyebrows -->
+  <path d="M78,85 Q88,78 98,83" fill="none" stroke="#C46415" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M178,85 Q168,78 158,83" fill="none" stroke="#C46415" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Big Shiny Eyes -->
+  <circle cx="92" cy="105" r="14" fill="#2A1B12"/>
+  <circle cx="164" cy="105" r="14" fill="#2A1B12"/>
+  <circle cx="88" cy="100" r="5" fill="#FFFFFF"/>
+  <circle cx="160" cy="100" r="5" fill="#FFFFFF"/>
+  <circle cx="96" cy="110" r="2.5" fill="#FFFFFF"/>
+  <circle cx="168" cy="110" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Tiny Pink Nose -->
+  <path d="M124,121 Q128,119 132,121 Q134,124 128,127 Q122,124 124,121 Z" fill="#F48FB1"/>
+
+  <!-- Little Smiling Mouth -->
+  <path d="M128,127 L128,131" stroke="#2A1B12" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M116,126 Q122,135 128,131 Q134,135 140,126" fill="none" stroke="#2A1B12" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Classic Hamster Teeth -->
+  <path d="M123,131 L133,131 L132,137 L124,137 Z" fill="#FFFFFF" stroke="#2A1B12" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="128" y1="131" x2="128" y2="137" stroke="#2A1B12" stroke-width="1.5"/>
+
+  <!-- Sunflower Seed -->
+  <g transform="translate(128, 165) rotate(20)">
+    <path d="M0,-20 C12,-8 14,12 0,20 C-12,12 -14,-8 0,-20 Z" fill="#2A1B12"/>
+    <path d="M0,-18 C9,-8 10,11 0,18 C-9,11 -10,-8 0,-18 Z" fill="#4A4A4A"/>
+    <path d="M0,-16 C3,-8 3,11 0,16 C-3,11 -3,-8 0,-16 Z" fill="#EEEEEE"/>
+  </g>
+
+  <!-- Front Paws Holding Seed -->
+  <g transform="translate(112, 165) rotate(-40)">
+    <ellipse cx="0" cy="0" rx="9" ry="14" fill="#F48FB1"/>
+    <line x1="3" y1="-12" x2="3" y2="-6" stroke="#D81B60" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="-1" y1="-13" x2="-1" y2="-7" stroke="#D81B60" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="-5" y1="-12" x2="-5" y2="-6" stroke="#D81B60" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  <g transform="translate(144, 165) rotate(40)">
+    <ellipse cx="0" cy="0" rx="9" ry="14" fill="#F48FB1"/>
+    <line x1="-3" y1="-12" x2="-3" y2="-6" stroke="#D81B60" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="1" y1="-13" x2="1" y2="-7" stroke="#D81B60" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="5" y1="-12" x2="5" y2="-6" stroke="#D81B60" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Fluffy Head Tuft -->
+  <path d="M123,35 C120,25 115,20 115,20 C122,25 125,30 128,35 C131,30 134,25 141,20 C141,20 136,25 133,35 Z" fill="#F4A556"/>
+</svg>

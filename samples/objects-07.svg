@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Saucer -->
+  <ellipse cx="95" cy="170" rx="70" ry="15" fill="#d4a574" stroke="#8B4513" stroke-width="2"/>
+
+  <!-- Cup body -->
+  <path d="M50 80 L55 155 C55 165 135 165 135 155 L140 80 Z" fill="#ffffff" stroke="#8B4513" stroke-width="2"/>
+
+  <!-- Coffee liquid -->
+  <ellipse cx="95" cy="85" rx="44" ry="12" fill="#4a2c0a"/>
+  <path d="M51 85 L55 155 C55 165 135 165 135 155 L139 85 C139 85 95 100 51 85 Z" fill="#6b3a1a" opacity="0.6"/>
+
+  <!-- Cup handle -->
+  <path d="M140 95 C170 95 175 140 140 140" fill="none" stroke="#8B4513" stroke-width="6" stroke-linecap="round"/>
+  <path d="M140 100 C165 100 170 135 140 135" fill="none" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Cup rim highlight -->
+  <ellipse cx="95" cy="80" rx="45" ry="12" fill="none" stroke="#8B4513" stroke-width="2"/>
+  <ellipse cx="95" cy="80" rx="43" ry="10" fill="none" stroke="#f5f5dc" stroke-width="1"/>
+
+  <!-- Steam -->
+  <path d="M75 65 C75 50 85 50 85 40 C85 30 75 30 75 15" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="d" values="M75 65 C75 50 85 50 85 40 C85 30 75 30 75 15;M75 65 C70 50 80 50 80 40 C80 30 70 30 72 15;M75 65 C75 50 85 50 85 40 C85 30 75 30 75 15" dur="3s" repeatCount="indefinite"/>
+  </path>
+
+  <path d="M95 60 C95 45 105 45 105 35 C105 25 95 25 95 10" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="d" values="M95 60 C95 45 105 45 105 35 C105 25 95 25 95 10;M95 60 C100 45 90 45 90 35 C90 25 100 25 98 10;M95 60 C95 45 105 45 105 35 C105 25 95 25 95 10" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+
+  <path d="M115 65 C115 50 125 50 125 40 C125 30 115 30 115 15" fill="none" stroke="#999" stroke-width="2" stroke-linecap="round" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="d" values="M115 65 C115 50 125 50 125 40 C125 30 115 30 115 15;M115 65 C110 50 120 50 120 40 C120 30 110 30 112 15;M115 65 C115 50 125 50 125 40 C125 30 115 30 115 15" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

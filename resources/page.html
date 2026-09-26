@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jev SVG classifier</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #fff; --ink: #1d2433; --muted: #6b7385; --line: #e2e5eb;
+  --accent: #4f5bd5; --yes: #2f9e6e; --no: #d0d5de; --off: #c64545; --warn: #b7791f;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14171d; --panel: #1c2028; --ink: #e6e9ef; --muted: #9aa3b5; --line: #2c323d; --no: #3a4150; }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { font: 13px/1.35 system-ui, -apple-system, Segoe UI, sans-serif; background: var(--bg); color: var(--ink);
+  display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+header { display: flex; align-items: center; gap: 16px; padding: 8px 14px; background: var(--panel); border-bottom: 1px solid var(--line); }
+header h1 { font-size: 15px; margin: 0; white-space: nowrap; }
+header .gh { display: inline-flex; color: var(--muted); margin-left: -8px; }
+header .gh:hover { color: var(--accent); }
+header .sub { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+header .meta { margin-left: auto; display: flex; gap: 10px; align-items: center; }
+select, input, button { font: inherit; color: inherit; }
+select, input[type=password] { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 4px 6px; }
+input[type=password] { width: 230px; }
+button { border: 1px solid var(--line); background: var(--panel); border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+button:disabled { opacity: .5; cursor: default; }
+#session { color: var(--muted); white-space: nowrap; }
+main { display: grid; grid-template-columns: 300px 1fr; min-height: 0; }
+aside { display: flex; flex-direction: column; gap: 8px; padding: 10px; border-right: 1px solid var(--line); background: var(--panel); min-height: 0; }
+aside h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 4px 0 0; }
+#samples { flex: 1 1 0; min-height: 120px; overflow-y: auto; border: 1px solid var(--line); border-radius: 6px; }
+#samples .group { position: sticky; top: 0; background: var(--panel); font-size: 11px; color: var(--muted); padding: 4px 8px; border-bottom: 1px solid var(--line); }
+#samples button { display: flex; justify-content: space-between; gap: 8px; width: 100%; border: 0; border-radius: 0; padding: 3px 8px; text-align: left; background: none; }
+#samples button:hover { background: var(--bg); }
+#samples button[aria-selected=true] { background: color-mix(in srgb, var(--accent) 15%, transparent); }
+#samples .src { color: var(--muted); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 110px; }
+.row { display: flex; gap: 8px; align-items: center; }
+.row > * { flex: 1; }
+#preview { height: 112px; border: 1px solid var(--line); border-radius: 6px; display: grid; place-items: center;
+  background: repeating-conic-gradient(var(--bg) 0 25%, var(--panel) 0 50%) 0 0 / 16px 16px; }
+#preview img { max-width: 104px; max-height: 104px; }
+#preview .empty { color: var(--muted); }
+#info { color: var(--muted); font-size: 12px; min-height: 32px; }
+#info .warn { color: var(--warn); }
+#result { min-height: 104px; }
+#model { min-width: 0; }
+#result .label { display: grid; grid-template-columns: 1fr 44px; gap: 2px 6px; align-items: center; margin: 2px 0; }
+#result .bar { grid-column: 1 / -1; height: 4px; background: var(--no); border-radius: 2px; overflow: hidden; }
+#result .bar > span { display: block; height: 100%; background: var(--accent); }
+#result .pct { text-align: right; font-variant-numeric: tabular-nums; }
+#result .top { font-weight: 700; }
+#result .truth { color: var(--yes); }
+#result .miss { color: var(--off); }
+.error { color: var(--off); }
+section { display: grid; grid-template-rows: auto 1fr auto; min-height: 0; padding: 10px; gap: 8px; }
+#calls { display: flex; gap: 8px; flex-wrap: wrap; min-height: 26px; align-items: center; }
+.call { border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; background: var(--panel); font-size: 12px; white-space: nowrap; }
+.call.running { border-color: var(--accent); }
+.call.done { border-color: var(--yes); }
+.call.failed { border-color: var(--off); color: var(--off); }
+.call .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); margin-right: 6px; vertical-align: middle; }
+.call.running .dot { background: var(--accent); animation: pulse 1s infinite; }
+.call.done .dot { background: var(--yes); }
+.call.failed .dot { background: var(--off); }
+@keyframes pulse { 50% { opacity: .3; } }
+#grid { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); grid-template-rows: repeat(10, minmax(0, 1fr)); gap: 4px; min-height: 0; }
+.q { position: relative; border: 1px solid var(--line); border-radius: 5px; background: var(--panel); padding: 3px 5px 9px; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: space-between; min-height: 0; }
+.q .text { font-size: 11px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.q .p { font: 11px var(--mono); color: var(--muted); }
+.q .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--no); }
+.q .bar > span { display: block; height: 100%; width: 0; background: var(--yes); transition: width .3s; }
+.q.pending { border-style: dashed; }
+.q.pending .p::after { content: 'asking…'; }
+.q.batch-0 { --batch: #4f5bd5; } .q.batch-1 { --batch: #a855f7; } .q.batch-2 { --batch: #0ea5e9; } .q.batch-3 { --batch: #f59e0b; }
+.q.pending { border-color: var(--batch); }
+footer { color: var(--muted); font-size: 11px; display: flex; gap: 14px; flex-wrap: wrap; }
+.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; margin-right: 4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Jev SVG classifier</h1>
+  <a class="gh" href="https://github.com/Fox-Islam/jev-svg-recognition" aria-label="jev-svg-recognition on GitHub"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+  <span class="sub">100 yes/no questions about an SVG's text, answered by Jev, combined by a trained classifier</span>
+  <div class="meta">
+    <span id="key" hidden>
+      <select id="provider" aria-label="Who Jev is reached through"></select>
+      <input id="api-key" type="password" autocomplete="off" spellcheck="false" aria-label="Your API key" placeholder="Your API key">
+    </span>
+    <span id="session">0 calls this session</span>
+  </div>
+</header>
+<main>
+  <aside>
+    <div class="row">
+      <button id="import">Import SVG…</button>
+      <input id="file" type="file" accept=".svg,image/svg+xml" hidden>
+    </div>
+    <h2>Samples, none in the training data</h2>
+    <div id="samples" role="listbox" aria-label="Samples"></div>
+    <div class="row">
+      <label for="model" style="flex:0">Classifier</label>
+      <select id="model" aria-label="Classifier"></select>
+    </div>
+    <div id="preview"><span class="empty">No SVG yet</span></div>
+    <div id="info"></div>
+    <button id="run" class="primary" disabled>Run</button>
+    <h2>Result</h2>
+    <div id="result"></div>
+  </aside>
+  <section>
+    <div id="calls" aria-live="polite"></div>
+    <div id="grid"></div>
+    <footer>
+      <span><span class="swatch" style="background:var(--yes)"></span>bar: Jev's P(yes)</span>
+      <span><span class="swatch" style="background:color-mix(in srgb, var(--yes) 45%, transparent)"></span>pushed towards the top label</span>
+      <span><span class="swatch" style="background:color-mix(in srgb, var(--off) 45%, transparent)"></span>pushed away from it</span>
+      <span>The SVG is sanitised (names, comments and text removed) before Jev sees it; 25 questions per call, 4 calls in parallel; the classifier runs in this page.</span>
+    </footer>
+  </section>
+</main>
+<script type="module">
+import { classify } from './classify.js';
+
+const $ = s => document.querySelector(s);
+const h = (tag, attrs = {}, ...kids) => {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') el.className = v; else if (k.startsWith('on')) el[k] = v; else if (v != null) el.setAttribute(k, v);
+  }
+  el.append(...kids.flat().filter(k => k != null && k !== false));
+  return el;
+};
+const pct = p => `${(p * 100).toFixed(1)}%`;
+
+let catalog, current = null, calls = 0, previewUrl = null;
+
+// The key you type goes to the server with each call, and is kept only in this tab's session storage.
+const keyStore = {
+  get: name => { try { return sessionStorage.getItem(`jev-${name}`) ?? ''; } catch { return ''; } },
+  set: (name, value) => { try { sessionStorage.setItem(`jev-${name}`, value); } catch {} },
+};
+function showKey(providers) {
+  const select = $('#provider'), input = $('#api-key');
+  select.replaceChildren(...Object.entries(providers).map(([id, p]) => h('option', { value: id }, p.label)));
+  if (keyStore.get('provider') in providers) select.value = keyStore.get('provider');
+  input.value = keyStore.get('key');
+  const hint = () => { input.placeholder = providers[select.value]?.server ? 'Your API key, or the server\'s' : 'Your API key'; };
+  select.onchange = () => { keyStore.set('provider', select.value); hint(); };
+  input.oninput = () => keyStore.set('key', input.value.trim());
+  hint();
+  $('#key').hidden = false;
+}
+function jevHeaders() {
+  const headers = { 'Content-Type': 'application/json' }, key = $('#api-key').value.trim();
+  headers['X-Jev-Provider'] = $('#provider').value;
+  if (key) headers['X-Jev-Key'] = key;
+  return headers;
+}
+
+// "Does this icon show a hot dog?" fits a tile as "a hot dog?"; the full question is in the tooltip.
+const short = q => q.replace(/^Does this icon show /, '').replace(/^Does the drawing (have|contain|show|look) /, '$1 ').replace(/^Is the (drawing|overall outline) /, '');
+
+function model() { return catalog.models[$('#model').value]; }
+
+function drawGrid(state = 'idle') {
+  const m = model();
+  $('#grid').replaceChildren(...m.questions.map((q, i) => h('div', {
+    class: `q batch-${Math.floor(i / 25)}${state === 'pending' ? ' pending' : ''}`, id: `q${i}`, title: q.text,
+  }, h('span', { class: 'text' }, short(q.text)), h('span', { class: 'p' }), h('span', { class: 'bar' }, h('span')))));
+}
+
+function setSvg(svg, meta) {
+  current = { svg, ...meta };
+  if (previewUrl) URL.revokeObjectURL(previewUrl);
+  // an <img> never runs scripts inside the SVG, so an imported file cannot act on this page
+  previewUrl = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+  $('#preview').replaceChildren(h('img', { src: previewUrl, alt: meta.label ? `Sample: ${meta.label}` : 'Imported SVG' }));
+  if (meta.model) $('#model').value = meta.model;
+  $('#model').disabled = !!meta.model;
+  $('#info').replaceChildren(meta.label
+    ? `True label: ${meta.label}, drawn by ${meta.source}; not in the classifier's training data. ${svg.length.toLocaleString()} characters.`
+    : `${meta.name}: ${svg.length.toLocaleString()} characters. Pick the classifier whose labels fit it.`);
+  $('#result').replaceChildren();
+  $('#calls').replaceChildren();
+  drawGrid();
+  $('#run').disabled = false;
+}
+
+function listSamples() {
+  const groups = [['objects', 'Objects drawn by LLMs (Rapidata)'], ['emoji', 'Emoji subgroups (OpenMoji, Twemoji, Fluent, Noto)']];
+  const list = $('#samples');
+  list.replaceChildren(...groups.flatMap(([id, title]) => [
+    h('div', { class: 'group' }, title),
+    ...catalog.samples.filter(s => s.model === id).map(s => h('button', {
+      role: 'option', 'aria-selected': 'false',
+      onclick: async e => {
+        list.querySelectorAll('[aria-selected=true]').forEach(b => b.setAttribute('aria-selected', 'false'));
+        e.currentTarget.setAttribute('aria-selected', 'true');
+        const r = await fetch(`api/samples/${encodeURIComponent(s.file)}`).then(r => r.json());
+        setSvg(r.svg, { model: s.model, recipe: s.recipe, label: s.label, source: s.source });
+      },
+    }, h('span', {}, s.label), h('span', { class: 'src' }, s.source))),
+  ]));
+}
+
+async function post(path, body, headers = { 'Content-Type': 'application/json' }) {
+  const r = await fetch(path, { method: 'POST', headers, body: JSON.stringify(body) });
+  const data = await r.json().catch(() => ({ error: `the server answered ${r.status}` }));
+  if (!r.ok) throw new Error(data.error + (data.detail ? `: ${data.detail}` : ''));
+  return data;
+}
+
+async function run() {
+  const m = model(), recipe = current.recipe ?? m.recipe;
+  $('#run').disabled = true;
+  $('#result').replaceChildren();
+  drawGrid('pending');
+  let prepared;
+  try {
+    prepared = await post('api/prepare', { svg: current.svg, recipe, label: current.label ?? '' });
+  } catch (e) {
+    $('#result').replaceChildren(h('p', { class: 'error' }, e.message));
+    $('#run').disabled = false;
+    return;
+  }
+  $('#info').append(h('div', {}, `Sanitised to ${prepared.chars.toLocaleString()} characters.`,
+    prepared.leaks.length ? h('span', { class: 'warn' }, ` Label words left in it: ${prepared.leaks.join(', ')}.`) : ''));
+
+  const answers = new Array(m.questions.length).fill(null);
+  const batches = [];
+  for (let i = 0; i < m.questions.length; i += 25) batches.push([i, Math.min(i + 25, m.questions.length)]);
+  const chips = batches.map(([a, b], n) => h('span', { class: 'call running' }, h('span', { class: 'dot' }), `Call ${n + 1} · q${a + 1}–${b} · asking…`));
+  $('#calls').replaceChildren(...chips);
+  const results = await Promise.allSettled(batches.map(async ([a, b], n) => {
+    const out = await post('api/ask', { prepared: prepared.prepared, questions: m.questions.slice(a, b).map(q => q.text) }, jevHeaders());
+    calls += 1;
+    $('#session').textContent = `${calls} call${calls === 1 ? '' : 's'} this session`;
+    chips[n].className = 'call done';
+    chips[n].lastChild.textContent = `Call ${n + 1} · q${a + 1}–${b} · ${out.ms} ms${out.usage?.input_tokens ? ` · ${out.usage.input_tokens} tokens` : ''}`;
+    out.answers.forEach((p, j) => {
+      const i = a + j, tile = $(`#q${i}`);
+      answers[i] = p;
+      tile.classList.remove('pending');
+      tile.querySelector('.p').textContent = p == null ? 'no answer' : `P(yes) ${p.toFixed(2)}`;
+      tile.querySelector('.bar > span').style.width = `${(p ?? 0) * 100}%`;
+      tile.title = `${m.questions[i].text}\nP(yes) ${p?.toFixed(2)}`;
+    });
+  }).map((promise, n) => promise.catch(e => {
+    chips[n].className = 'call failed';
+    chips[n].lastChild.textContent = `Call ${n + 1} failed`;
+    throw e;
+  })));
+  const failed = results.find(r => r.status === 'rejected');
+  if (failed) {
+    $('#result').replaceChildren(h('p', { class: 'error' }, failed.reason.message));
+    $('#run').disabled = false;
+    return;
+  }
+
+  const { ranked, contribution } = classify(m, answers);
+  const c = contribution(ranked[0].k), scale = Math.max(...c.map(Math.abs)) || 1;
+  c.forEach((v, i) => {
+    const tile = $(`#q${i}`), strength = Math.round(Math.min(Math.abs(v) / scale, 1) * 45);
+    tile.style.background = `color-mix(in srgb, var(${v >= 0 ? '--yes' : '--off'}) ${strength}%, var(--panel))`;
+    tile.title += `\ntowards ${ranked[0].label}: ${v >= 0 ? '+' : ''}${v.toFixed(2)}`;
+  });
+  $('#result').replaceChildren(...ranked.slice(0, 5).map((r, n) => h('div', { class: 'label' },
+    h('span', { class: [n === 0 ? 'top' : '', current.label === r.label ? 'truth' : (n === 0 && current.label ? 'miss' : '')].join(' ') },
+      r.label, current.label === r.label ? ' ✓' : ''),
+    h('span', { class: 'pct' }, pct(r.p)),
+    h('span', { class: 'bar' }, h('span', { style: `width:${r.p * 100}%` })))));
+  $('#run').disabled = false;
+}
+
+$('#import').onclick = () => $('#file').click();
+$('#file').onchange = async () => {
+  const f = $('#file').files[0];
+  $('#file').value = '';
+  if (!f) return;
+  $('#samples').querySelectorAll('[aria-selected=true]').forEach(b => b.setAttribute('aria-selected', 'false'));
+  setSvg(await f.text(), { name: f.name });
+};
+$('#model').onchange = () => drawGrid();
+$('#run').onclick = run;
+
+fetch('api/catalog').then(r => r.json()).then(c => {
+  catalog = c;
+  $('#model').replaceChildren(...Object.values(c.models).map(m => h('option', { value: m.name, title: m.description }, `${m.title} (${m.labels.length} labels)`)));
+  showKey(c.providers);
+  listSamples();
+  drawGrid();
+}).catch(e => $('#result').replaceChildren(h('p', { class: 'error' }, `Could not reach the server: ${e.message}`)));
+</script>
+</body>
+</html>

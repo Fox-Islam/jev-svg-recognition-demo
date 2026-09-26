@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Single rose</title>
+  <desc id="desc">A stylized single red rose with a green stem and leaves.</desc>
+
+  <defs>
+    <linearGradient id="stemGrad" x1="210" y1="230" x2="285" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2f8f46"/>
+      <stop offset="1" stop-color="#145c2a"/>
+    </linearGradient>
+
+    <linearGradient id="leafGrad" x1="100" y1="300" x2="320" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#45ad57"/>
+      <stop offset="1" stop-color="#176b32"/>
+    </linearGradient>
+
+    <radialGradient id="petalGrad" cx="45%" cy="32%" r="70%">
+      <stop offset="0" stop-color="#ff6b83"/>
+      <stop offset="0.55" stop-color="#d7193f"/>
+      <stop offset="1" stop-color="#8e0927"/>
+    </radialGradient>
+
+    <linearGradient id="petalDark" x1="190" y1="70" x2="325" y2="225" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f54865"/>
+      <stop offset="1" stop-color="#8a0624"/>
+    </linearGradient>
+
+    <linearGradient id="sepalGrad" x1="220" y1="205" x2="290" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#49a84f"/>
+      <stop offset="1" stop-color="#17622d"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Stem -->
+  <path
+    d="M262 226 C244 295 283 356 247 476"
+    fill="none"
+    stroke="url(#stemGrad)"
+    stroke-width="15"
+    stroke-linecap="round"
+  />
+
+  <!-- Thorns -->
+  <path d="M253 316 L220 298 L248 333 Z" fill="#17622d"/>
+  <path d="M264 389 L296 373 L269 405 Z" fill="#17622d"/>
+
+  <!-- Leaves -->
+  <g>
+    <path
+      d="M251 338 C194 300 151 311 106 362 C164 379 213 370 251 338 Z"
+      fill="url(#leafGrad)"
+      stroke="#0f5526"
+      stroke-width="4"
+      stroke-linejoin="round"
+    />
+    <path d="M115 359 C162 349 203 343 251 338" fill="none" stroke="#d2f0c9" stroke-opacity="0.55" stroke-width="3"/>
+    <path d="M169 350 C155 336 143 326 128 319" fill="none" stroke="#0f5526" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M196 345 C184 330 173 319 158 311" fill="none" stroke="#0f5526" stroke-opacity="0.45" stroke-width="2"/>
+  </g>
+
+  <g>
+    <path
+      d="M263 374 C317 331 361 337 409 386 C352 408 302 402 263 374 Z"
+      fill="url(#leafGrad)"
+      stroke="#0f5526"
+      stroke-width="4"
+      stroke-linejoin="round"
+    />
+    <path d="M400 385 C350 376 310 374 263 374" fill="none" stroke="#d2f0c9" stroke-opacity="0.55" stroke-width="3"/>
+    <path d="M346 380 C360 363 371 352 387 344" fill="none" stroke="#0f5526" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M318 377 C331 361 342 350 357 341" fill="none" stroke="#0f5526" stroke-opacity="0.45" stroke-width="2"/>
+  </g>
+
+  <!-- Sepals -->
+  <g filter="url(#softShadow)">
+    <path d="M256 214 C238 230 214 239 187 237 C215 259 239 265 256 239 Z" fill="url(#sepalGrad)"/>
+    <path d="M255 214 C276 231 302 238 329 234 C304 258 277 266 255 239 Z" fill="url(#sepalGrad)"/>
+    <path d="M256 211 C244 239 244 263 256 286 C271 260 270 236 256 211 Z" fill="url(#sepalGrad)"/>
+  </g>
+
+  <!-- Rose bloom -->
+  <g filter="url(#softShadow)">
+    <!-- Outer petals -->
+    <path
+      d="M257 66 C213 59 177 82 166 119 C149 177 196 218 255 227 C313 217 361 177 346 119 C336 82 301 58 257 66 Z"
+      fill="url(#petalDark)"
+      stroke="#7b0620"
+      stroke-width="4"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M166 122 C188 98 229 93 254 122 C236 133 221 154 220 181 C184 177 159 154 166 122 Z"
+      fill="#c80f35"
+      opacity="0.95"
+    />
+
+    <path
+      d="M346 122 C321 96 281 93 256 122 C281 132 294 154 293 181 C329 176 354 153 346 122 Z"
+      fill="#b40b2d"
+      opacity="0.95"
+    />
+
+    <path
+      d="M190 178 C207 217 242 236 256 227 C270 237 305 217 323 178 C292 185 274 177 256 155 C238 177 220 185 190 178 Z"
+      fill="url(#petalGrad)"
+    />
+
+    <!-- Middle petals -->
+    <path
+      d="M210 115 C235 90 279 91 303 116 C286 124 269 140 258 164 C242 140 228 126 210 115 Z"
+      fill="#f12f55"
+    />
+
+    <path
+      d="M202 139 C218 116 246 111 260 130 C240 144 232 163 235 193 C214 185 199 164 202 139 Z"
+      fill="#e51f48"
+    />
+
+    <path
+      d="M310 139 C294 116 265 111 252 130 C273 144 281 163 277 193 C299 185 314 164 310 139 Z"
+      fill="#c70d32"
+    />
+
+    <path
+      d="M226 192 C233 156 252 136 282 128 C293 161 282 190 256 207 C244 202 234 198 226 192 Z"
+      fill="#d9153a"
+    />
+
+    <!-- Inner curl -->
+    <path
+      d="M257 104 C228 104 212 122 215 146 C218 172 247 175 260 158 C272 142 251 132 235 144 C244 124 274 121 287 139 C306 166 278 197 248 187 C219 178 207 146 222 123 C229 113 242 105 257 104 Z"
+      fill="#ff607a"
+      stroke="#9e0828"
+      stroke-width="3"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M253 130 C268 125 284 131 289 146 C294 164 280 181 260 184 C275 169 274 149 253 130 Z"
+      fill="#b5082b"
+      opacity="0.85"
+    />
+
+    <path
+      d="M238 145 C248 137 263 140 267 150 C272 163 258 174 242 168 C252 162 252 151 238 145 Z"
+      fill="#ffd0d8"
+      opacity="0.35"
+    />
+  </g>
+</svg>

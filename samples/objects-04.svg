@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Circus Tent</title>
+  <desc id="desc">A red and cream striped circus tent with flags, ropes, and an open entrance.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff6ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <linearGradient id="redStripe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4b4b"/>
+      <stop offset="100%" stop-color="#c91f2f"/>
+    </linearGradient>
+
+    <linearGradient id="creamStripe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7d6"/>
+      <stop offset="100%" stop-color="#f2d98b"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+
+    <clipPath id="roofClip">
+      <polygon points="256,88 56,326 456,326"/>
+    </clipPath>
+
+    <clipPath id="bodyClip">
+      <path d="M92 318 L420 318 L456 438 L56 438 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#sky)"/>
+  <ellipse cx="256" cy="448" rx="214" ry="34" fill="#cfb780" opacity="0.45"/>
+
+  <!-- Ropes -->
+  <g stroke="#9b6b37" stroke-width="4" stroke-linecap="round" opacity="0.75">
+    <line x1="122" y1="318" x2="38" y2="438"/>
+    <line x1="390" y1="318" x2="474" y2="438"/>
+    <line x1="168" y1="319" x2="120" y2="437"/>
+    <line x1="344" y1="319" x2="392" y2="437"/>
+  </g>
+
+  <!-- Stakes -->
+  <g fill="#7c4a24">
+    <rect x="28" y="434" width="28" height="8" rx="4" transform="rotate(-10 42 438)"/>
+    <rect x="456" y="434" width="28" height="8" rx="4" transform="rotate(10 470 438)"/>
+    <rect x="106" y="434" width="28" height="8" rx="4" transform="rotate(-8 120 438)"/>
+    <rect x="378" y="434" width="28" height="8" rx="4" transform="rotate(8 392 438)"/>
+  </g>
+
+  <!-- Top flag pole -->
+  <line x1="256" y1="90" x2="256" y2="40" stroke="#6b3f1f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M258 42 C286 34, 306 44, 328 36 L328 70 C304 78, 286 66, 258 74 Z" fill="#e5283f"/>
+  <path d="M258 42 C286 34, 306 44, 328 36 L328 70 C304 78, 286 66, 258 74 Z" fill="none" stroke="#a41424" stroke-width="3"/>
+
+  <!-- Tent shadow group -->
+  <g filter="url(#softShadow)">
+    <!-- Roof base -->
+    <polygon points="256,88 56,326 456,326" fill="#fff1b8" stroke="#8e1d2b" stroke-width="5"/>
+
+    <!-- Roof stripes -->
+    <g clip-path="url(#roofClip)">
+      <polygon points="256,88 56,326 116,326" fill="url(#redStripe)"/>
+      <polygon points="256,88 116,326 176,326" fill="url(#creamStripe)"/>
+      <polygon points="256,88 176,326 236,326" fill="url(#redStripe)"/>
+      <polygon points="256,88 236,326 296,326" fill="url(#creamStripe)"/>
+      <polygon points="256,88 296,326 356,326" fill="url(#redStripe)"/>
+      <polygon points="256,88 356,326 416,326" fill="url(#creamStripe)"/>
+      <polygon points="256,88 416,326 456,326" fill="url(#redStripe)"/>
+    </g>
+
+    <!-- Roof outline -->
+    <polygon points="256,88 56,326 456,326" fill="none" stroke="#8e1d2b" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Center pole hint -->
+    <line x1="256" y1="92" x2="256" y2="438" stroke="#8e1d2b" stroke-width="5" opacity="0.22"/>
+
+    <!-- Lower tent body -->
+    <path d="M92 318 L420 318 L456 438 L56 438 Z" fill="#fff1b8" stroke="#8e1d2b" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Body stripes -->
+    <g clip-path="url(#bodyClip)">
+      <polygon points="56,318 112,318 92,438 56,438" fill="url(#redStripe)"/>
+      <polygon points="112,318 168,318 154,438 92,438" fill="url(#creamStripe)"/>
+      <polygon points="168,318 224,318 218,438 154,438" fill="url(#redStripe)"/>
+      <polygon points="224,318 288,318 294,438 218,438" fill="url(#creamStripe)"/>
+      <polygon points="288,318 344,318 358,438 294,438" fill="url(#redStripe)"/>
+      <polygon points="344,318 400,318 420,438 358,438" fill="url(#creamStripe)"/>
+      <polygon points="400,318 456,318 456,438 420,438" fill="url(#redStripe)"/>
+    </g>
+
+    <!-- Scalloped valance -->
+    <path d="
+      M68 318
+      L444 318
+      L444 342
+      C428 326, 412 326, 396 342
+      C380 326, 364 326, 348 342
+      C332 326, 316 326, 300 342
+      C284 326, 268 326, 252 342
+      C236 326, 220 326, 204 342
+      C188 326, 172 326, 156 342
+      C140 326, 124 326, 108 342
+      C92 326, 76 326, 68 342
+      Z"
+      fill="#d82436"
+      stroke="#8e1d2b"
+      stroke-width="4"
+      stroke-linejoin="round"/>
+
+    <!-- Entrance -->
+    <path d="M206 438 L206 382 C206 348, 230 330, 256 330 C282 330, 306 348, 306 382 L306 438 Z"
+          fill="#3a1d28" stroke="#8e1d2b" stroke-width="5"/>
+    <path d="M256 333 C240 357, 232 386, 232 438 L206 438 L206 382 C206 348, 230 330, 256 330 Z"
+          fill="#ffffff" opacity="0.14"/>
+    <path d="M256 333 C272 357, 280 386, 280 438 L306 438 L306 382 C306 348, 282 330, 256 330 Z"
+          fill="#000000" opacity="0.12"/>
+
+    <!-- Door curtain trim -->
+    <line x1="256" y1="335" x2="256" y2="438" stroke="#f6d77a" stroke-width="4" opacity="0.85"/>
+    <circle cx="256" cy="335" r="7" fill="#f6d77a" stroke="#8e1d2b" stroke-width="3"/>
+  </g>
+
+  <!-- Decorative lights -->
+  <g>
+    <path d="M116 314 C178 286, 334 286, 396 314" fill="none" stroke="#6b3f1f" stroke-width="3" opacity="0.55"/>
+    <g fill="#ffd85a" stroke="#a66a1b" stroke-width="2">
+      <circle cx="138" cy="306" r="6"/>
+      <circle cx="176" cy="296" r="6"/>
+      <circle cx="216" cy="291" r="6"/>
+      <circle cx="256" cy="290" r="6"/>
+      <circle cx="296" cy="291" r="6"/>
+      <circle cx="336" cy="296" r="6"/>
+      <circle cx="374" cy="306" r="6"/>
+    </g>
+  </g>
+</svg>

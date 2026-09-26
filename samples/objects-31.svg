@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#252a3d"/>
+      <stop offset="50%" stop-color="#181b28"/>
+      <stop offset="100%" stop-color="#0f111a"/>
+    </linearGradient>
+
+    <!-- Metallic Gradient for Paperclip -->
+    <linearGradient id="metal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a2a5b0"/>
+      <stop offset="15%" stop-color="#eef1f6"/>
+      <stop offset="30%" stop-color="#cbd0da"/>
+      <stop offset="45%" stop-color="#fdfefe"/>
+      <stop offset="55%" stop-color="#9aa0ad"/>
+      <stop offset="75%" stop-color="#e3e7f0"/>
+      <stop offset="88%" stop-color="#787d8a"/>
+      <stop offset="100%" stop-color="#b1b5c1"/>
+    </linearGradient>
+
+    <!-- 3D Highlight Gradient -->
+    <linearGradient id="highlight-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Ambient Glow Filter -->
+    <filter id="ambient-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Drop Shadow for Realism -->
+    <filter id="natural-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2" dy="6" stdDeviation="5" flood-color="#040508" flood-opacity="0.5"/>
+      <feDropShadow dx="4" dy="12" stdDeviation="10" flood-color="#040508" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="100%" height="100%" rx="54" fill="url(#bg-grad)"/>
+  
+  <!-- Outer Border (Subtle Glassmorphism) -->
+  <rect x="1.5" y="1.5" width="253" height="253" rx="52.5" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.08"/>
+
+  <!-- Ambient Light Leak Behind Paperclip -->
+  <circle cx="128" cy="128" r="80" fill="#4f5b85" opacity="0.15" filter="url(#ambient-glow)" />
+
+  <!-- Main Paperclip Group (Rotated 45 degrees for classic presentation) -->
+  <g filter="url(#natural-shadow)">
+    <g transform="translate(128, 128) rotate(45) scale(1.35)">
+      
+      <!-- Shared Paperclip Path:
+           - Start at inner tip (6, -8)
+           - Line down to (6, 27)
+           - Inner bottom curve to (-6, 27) [R=6]
+           - Line up to (-6, -43)
+           - Mid top curve to (18, -43) [R=12]
+           - Line down to (18, 37)
+           - Outer bottom curve to (-18, 37) [R=18]
+           - Line up to outer end (-18, -53)
+      -->
+      
+      <!-- 1. Dark Under-unifying Path (Creates 3D depth / occlusion) -->
+      <path d="M 6 -8 L 6 27 A 6 6 0 0 1 -6 27 L -6 -43 A 12 12 0 0 1 18 -43 L 18 37 A 18 18 0 0 1 -18 37 L -18 -53"
+            fill="none" 
+            stroke="#16171d" 
+            stroke-width="8.8" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"/>
+
+      <!-- 2. Main Metallic Core -->
+      <path d="M 6 -8 L 6 27 A 6 6 0 0 1 -6 27 L -6 -43 A 12 12 0 0 1 18 -43 L 18 37 A 18 18 0 0 1 -18 37 L -18 -53"
+            fill="none" 
+            stroke="url(#metal-grad)" 
+            stroke-width="7.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"/>
+
+      <!-- 3. Inner Specular Highlight (Simulates cylindrical reflection) -->
+      <path d="M 6 -8 L 6 27 A 6 6 0 0 1 -6 27 L -6 -43 A 12 12 0 0 1 18 -43 L 18 37 A 18 18 0 0 1 -18 37 L -18 -53"
+            fill="none" 
+            stroke="url(#highlight-grad)" 
+            stroke-width="2.2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+            transform="translate(-0.8, -0.8)"
+            opacity="0.85"/>
+
+      <!-- 4. Subtle Secondary Dark Reflector Edge -->
+      <path d="M 6 -8 L 6 27 A 6 6 0 0 1 -6 27 L -6 -43 A 12 12 0 0 1 18 -43 L 18 37 A 18 18 0 0 1 -18 37 L -18 -53"
+            fill="none" 
+            stroke="#000000" 
+            stroke-width="1.0" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+            transform="translate(1.2, 1.2)"
+            opacity="0.15"/>
+            
+    </g>
+  </g>
+</svg>

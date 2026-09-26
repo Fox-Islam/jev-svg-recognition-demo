@@ -1,0 +1,7 @@
+/vendor/
+/.phpunit.cache/
+__pycache__/
+/.venv/
+/.pytest_cache/
+/.ruff_cache/
+.env

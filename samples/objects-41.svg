@@ -1,0 +1,86 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect width="800" height="420" fill="#f4f1ea"/>
+
+  <!-- ===================== TOP VIEW ===================== -->
+  <g>
+    <!-- pintail deck shape -->
+    <path d="M 90 95
+             C 120 55, 240 45, 400 45
+             C 560 45, 690 60, 720 95
+             C 690 130, 560 145, 400 145
+             C 240 145, 120 135, 90 95 Z"
+          fill="#b5713f" stroke="#7c4a22" stroke-width="4"/>
+
+    <!-- wood grain stripes -->
+    <path d="M 110 95 C 200 70, 600 70, 705 95" stroke="#8a522a" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M 110 95 C 200 120, 600 120, 705 95" stroke="#8a522a" stroke-width="3" fill="none" opacity="0.6"/>
+
+    <!-- center racing stripe -->
+    <path d="M 95 95 L 715 95" stroke="#f5d76e" stroke-width="10"/>
+    <path d="M 95 95 L 715 95" stroke="#2e86ab" stroke-width="4"/>
+
+    <!-- truck mounting bolts -->
+    <g fill="#3b3b3b">
+      <circle cx="195" cy="78" r="4"/>
+      <circle cx="225" cy="78" r="4"/>
+      <circle cx="195" cy="112" r="4"/>
+      <circle cx="225" cy="112" r="4"/>
+      <circle cx="575" cy="78" r="4"/>
+      <circle cx="605" cy="78" r="4"/>
+      <circle cx="575" cy="112" r="4"/>
+      <circle cx="605" cy="112" r="4"/>
+    </g>
+  </g>
+
+  <!-- ===================== SIDE VIEW ===================== -->
+  <g>
+    <!-- ground shadow -->
+    <ellipse cx="400" cy="360" rx="320" ry="10" fill="#000" opacity="0.08"/>
+
+    <!-- wheels (back pair, slightly visible) -->
+    <circle cx="218" cy="330" r="26" fill="#c2451e"/>
+    <circle cx="588" cy="330" r="26" fill="#c2451e"/>
+
+    <!-- trucks -->
+    <g fill="#9aa0a6" stroke="#5f6368" stroke-width="2">
+      <!-- front truck -->
+      <rect x="180" y="290" width="60" height="10" rx="3"/>
+      <path d="M 198 300 L 188 326 L 232 326 L 222 300 Z"/>
+      <!-- rear truck -->
+      <rect x="560" y="290" width="60" height="10" rx="3"/>
+      <path d="M 578 300 L 568 326 L 612 326 L 602 300 Z"/>
+    </g>
+
+    <!-- wheels (front pair) -->
+    <g>
+      <circle cx="210" cy="330" r="28" fill="#ff7f2a" stroke="#b34700" stroke-width="3"/>
+      <circle cx="210" cy="330" r="9" fill="#e8e8e8" stroke="#999" stroke-width="2"/>
+      <circle cx="210" cy="330" r="3" fill="#666"/>
+      <circle cx="580" cy="330" r="28" fill="#ff7f2a" stroke="#b34700" stroke-width="3"/>
+      <circle cx="580" cy="330" r="9" fill="#e8e8e8" stroke="#999" stroke-width="2"/>
+      <circle cx="580" cy="330" r="3" fill="#666"/>
+    </g>
+
+    <!-- deck (side profile with upturned nose & tail) -->
+    <path d="M 72 252
+             C 100 274, 150 280, 220 280
+             L 580 280
+             C 650 280, 700 274, 728 252
+             L 734 262
+             C 706 286, 652 292, 580 292
+             L 220 292
+             C 148 292, 94 286, 66 262 Z"
+          fill="#8a522a" stroke="#5c3417" stroke-width="3"/>
+
+    <!-- grip tape on top -->
+    <path d="M 78 254
+             C 105 274, 152 279, 220 279
+             L 580 279
+             C 648 279, 695 274, 722 254"
+          fill="none" stroke="#2b2b2b" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- label -->
+  <text x="400" y="402" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#7c4a22" font-style="italic">Longboard</text>
+</svg>

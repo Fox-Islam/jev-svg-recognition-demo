@@ -1,0 +1,20 @@
+<svg width="100" height="140" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fridge body -->
+  <rect x="20" y="5" width="60" height="125" rx="6" ry="6"
+        fill="#e8eef2" stroke="#4a5568" stroke-width="3"/>
+  
+  <!-- Divider line (freezer / fridge) -->
+  <line x1="20" y1="45" x2="80" y2="45" stroke="#4a5568" stroke-width="3"/>
+  
+  <!-- Top door handle -->
+  <rect x="28" y="18" width="5" height="18" rx="2.5" ry="2.5"
+        fill="#4a5568"/>
+  
+  <!-- Bottom door handle -->
+  <rect x="28" y="55" width="5" height="30" rx="2.5" ry="2.5"
+        fill="#4a5568"/>
+  
+  <!-- Little feet -->
+  <rect x="24" y="130" width="6" height="6" fill="#4a5568"/>
+  <rect x="70" y="130" width="6" height="6" fill="#4a5568"/>
+</svg>

@@ -1,0 +1,49 @@
+{
+    "name": "phox/jev-svg-recognition-demo",
+    "description": "A page that classifies an SVG from Jev's answers to 100 yes/no questions, and the PHP server behind it",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fox Islam",
+            "email": "foxislam@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "phox/typesafe-sdk-php": "^0.4.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "pestphp/pest": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phox\\JevSvgDemo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "lint": "pint --test",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "PHP_CLI_SERVER_WORKERS=8 php -S 127.0.0.1:8767 public/index.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

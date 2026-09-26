@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+
+  <!-- Sky background -->
+  <rect width="400" height="300" fill="#87CEEB"/>
+
+  <!-- Ground -->
+  <rect x="0" y="240" width="400" height="60" fill="#808080"/>
+
+  <!-- Road markings -->
+  <rect x="0" y="255" width="400" height="8" fill="#FFD700" opacity="0.5"/>
+
+  <!-- Main building -->
+  <rect x="20" y="120" width="160" height="120" fill="#F5F5DC" stroke="#8B7355" stroke-width="2"/>
+
+  <!-- Building roof -->
+  <polygon points="10,120 190,120 180,90 20,90" fill="#CC4444" stroke="#AA3333" stroke-width="2"/>
+
+  <!-- Door -->
+  <rect x="75" y="190" width="40" height="50" fill="#8B6914" stroke="#5C4A1E" stroke-width="2"/>
+  <circle cx="110" cy="216" r="3" fill="#FFD700"/>
+
+  <!-- Window -->
+  <rect x="30" y="140" width="45" height="35" fill="#ADD8E6" stroke="#8B7355" stroke-width="2"/>
+  <line x1="52" y1="140" x2="52" y2="175" stroke="#8B7355" stroke-width="1"/>
+  <line x1="30" y1="157" x2="75" y2="157" stroke="#8B7355" stroke-width="1"/>
+
+  <!-- Sign on building -->
+  <rect x="130" y="135" width="40" height="20" fill="#FF6600" rx="3"/>
+  <text x="150" y="149" font-family="Arial" font-size="9" fill="white" text-anchor="middle" font-weight="bold">GAS</text>
+
+  <!-- Canopy / Overhang -->
+  <rect x="160" y="110" width="220" height="12" fill="#CC4444" stroke="#AA3333" stroke-width="2"/>
+  <rect x="170" y="122" width="8" height="110" fill="#AAAAAA"/>
+  <rect x="352" y="122" width="8" height="110" fill="#AAAAAA"/>
+
+  <!-- Fuel Pump 1 -->
+  <rect x="195" y="165" width="45" height="75" rx="4" fill="#EEEEEE" stroke="#AAAAAA" stroke-width="2"/>
+  <rect x="200" y="172" width="35" height="20" fill="#333333" rx="2"/>
+  <text x="217" y="186" font-family="Arial" font-size="8" fill="#00FF00" text-anchor="middle">$3.89</text>
+  <rect x="207" y="200" width="10" height="18" fill="#FF6600" rx="2"/>
+  <rect x="223" y="200" width="10" height="18" fill="#00AA00" rx="2"/>
+  <!-- Nozzle hose -->
+  <path d="M240 210 Q260 205 260 220" stroke="#333333" stroke-width="3" fill="none"/>
+  <rect x="255" y="218" width="10" height="5" fill="#333333" rx="1"/>
+
+  <!-- Fuel Pump 2 -->
+  <rect x="295" y="165" width="45" height="75" rx="4" fill="#EEEEEE" stroke="#AAAAAA" stroke-width="2"/>
+  <rect x="300" y="172" width="35" height="20" fill="#333333" rx="2"/>
+  <text x="317" y="186" font-family="Arial" font-size="8" fill="#00FF00" text-anchor="middle">$3.99</text>
+  <rect x="307" y="200" width="10" height="18" fill="#FF6600" rx="2"/>
+  <rect x="323" y="200" width="10" height="18" fill="#00AA00" rx="2"/>
+  <!-- Nozzle hose -->
+  <path d="M340 210 Q360 205 360 220" stroke="#333333" stroke-width="3" fill="none"/>
+  <rect x="355" y="218" width="10" height="5" fill="#333333" rx="1"/>
+
+  <!-- Price sign -->
+  <rect x="330" y="60" width="55" height="50" fill="#FFFFFF" stroke="#333333" stroke-width="3"/>
+  <rect x="330" y="60" width="55" height="16" fill="#FF0000"/>
+  <text x="357" y="72" font-family="Arial" font-size="9" fill="white" text-anchor="middle" font-weight="bold">FUEL</text>
+  <text x="357" y="90" font-family="Arial" font-size="10" fill="#333333" text-anchor="middle" font-weight="bold">$3.89</text>
+  <text x="357" y="104" font-family="Arial" font-size="9" fill="#333333" text-anchor="middle">/gal</text>
+  <!-- Sign pole -->
+  <rect x="354" y="110" width="6" height="35" fill="#888888"/>
+
+  <!-- Small car -->
+  <rect x="195" y="218" width="80" height="22" rx="5" fill="#4169E1" stroke="#2F4F9F" stroke-width="1.5"/>
+  <rect x="208" y="208" width="50" height="15" rx="4" fill="#5580DD" stroke="#2F4F9F" stroke-width="1.5"/>
+  <circle cx="215" cy="242" r="7" fill="#222222"/>
+  <circle cx="215" cy="242" r="4" fill="#888888"/>
+  <circle cx="260" cy="242" r="7" fill="#222222"/>
+  <circle cx="260" cy="242" r="4" fill="#888888"/>
+  <!-- Car window -->
+  <rect x="212" y="210" width="20" height="11" rx="2" fill="#ADD8E6" opacity="0.8"/>
+  <rect x="235" y="210" width="18" height="11" rx="2" fill="#ADD8E6" opacity="0.8"/>
+
+</svg>

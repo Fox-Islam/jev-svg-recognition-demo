@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" width="200" height="260">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#8e9aa6"/>
+      <stop offset="0.35" stop-color="#e3eaf0"/>
+      <stop offset="0.55" stop-color="#aeb9c4"/>
+      <stop offset="1"    stop-color="#6e7a86"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft shadow -->
+  <path d="M85 80 V185
+           A15 15 0 0 0 115 185 V60
+           A25 25 0 0 0 65 60 V195
+           A35 35 0 0 0 135 195 V70"
+        fill="none" stroke="#3d4750" stroke-width="11"
+        stroke-linecap="round" opacity="0.18"
+        transform="translate(3,4)"/>
+
+  <!-- paperclip wire -->
+  <path d="M85 80 V185
+           A15 15 0 0 0 115 185 V60
+           A25 25 0 0 0 65 60 V195
+           A35 35 0 0 0 135 195 V70"
+        fill="none" stroke="url(#metal)" stroke-width="9"
+        stroke-linecap="round"/>
+
+  <!-- thin highlight -->
+  <path d="M85 80 V185
+           A15 15 0 0 0 115 185 V60
+           A25 25 0 0 0 65 60 V195
+           A35 35 0 0 0 135 195 V70"
+        fill="none" stroke="#ffffff" stroke-width="2"
+        stroke-linecap="round" opacity="0.5"
+        transform="translate(-1.5,-1.5)"/>
+</svg>

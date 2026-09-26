@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300" height="300">
+  <defs>
+    <radialGradient id="popcornGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff8dc"/>
+      <stop offset="60%" stop-color="#ffeaa7"/>
+      <stop offset="100%" stop-color="#d4a85a"/>
+    </radialGradient>
+    <linearGradient id="bucketGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0392b"/>
+      <stop offset="50%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#a82818"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="100" cy="185" rx="55" ry="6" fill="#000" opacity="0.2"/>
+
+  <!-- Popcorn pile (behind bucket rim) -->
+  <g fill="url(#popcornGrad)" stroke="#b8860b" stroke-width="0.5">
+    <circle cx="75" cy="60" r="14"/>
+    <circle cx="95" cy="52" r="16"/>
+    <circle cx="115" cy="55" r="15"/>
+    <circle cx="130" cy="65" r="13"/>
+    <circle cx="62" cy="70" r="12"/>
+    <circle cx="85" cy="68" r="13"/>
+    <circle cx="108" cy="66" r="14"/>
+    <circle cx="125" cy="75" r="12"/>
+    <circle cx="70" cy="78" r="11"/>
+    <circle cx="100" cy="78" r="12"/>
+    <circle cx="118" cy="80" r="11"/>
+    <circle cx="60" cy="55" r="10"/>
+    <circle cx="135" cy="55" r="10"/>
+    <circle cx="88" cy="45" r="10"/>
+    <circle cx="110" cy="45" r="11"/>
+  </g>
+
+  <!-- Bucket body (trapezoid) -->
+  <path d="M 55,85 L 65,180 Q 66,185 71,185 L 129,185 Q 134,185 135,180 L 145,85 Z"
+        fill="url(#bucketGrad)"/>
+
+  <!-- White stripes -->
+  <g fill="#ffffff" opacity="0.95">
+    <polygon points="70,85 75,185 85,185 80,85"/>
+    <polygon points="95,85 98,185 108,185 105,85"/>
+    <polygon points="120,85 123,185 133,185 130,85"/>
+  </g>
+
+  <!-- Bucket rim -->
+  <ellipse cx="100" cy="85" rx="45" ry="8" fill="#8b1a0e"/>
+  <ellipse cx="100" cy="84" rx="45" ry="7" fill="#c0392b"/>
+  <ellipse cx="100" cy="83" rx="42" ry="5" fill="#e74c3c"/>
+
+  <!-- Popcorn bits spilling over rim -->
+  <g fill="url(#popcornGrad)" stroke="#b8860b" stroke-width="0.5">
+    <circle cx="68" cy="88" r="7"/>
+    <circle cx="132" cy="88" r="7"/>
+    <circle cx="100" cy="90" r="6"/>
+  </g>
+
+  <!-- Shine highlight on bucket -->
+  <path d="M 62,95 L 66,175" stroke="#ffffff" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Body -->
+  <ellipse cx="60" cy="65" rx="35" ry="30" fill="#D4A574"/>
+  
+  <!-- Belly -->
+  <ellipse cx="60" cy="72" rx="22" ry="20" fill="#F5DCC6"/>
+  
+  <!-- Head -->
+  <circle cx="60" cy="40" r="28" fill="#D4A574"/>
+  
+  <!-- Ears -->
+  <ellipse cx="40" cy="20" rx="10" ry="12" fill="#D4A574" transform="rotate(-15 40 20)"/>
+  <ellipse cx="40" cy="20" rx="6" ry="8" fill="#F0B0A0" transform="rotate(-15 40 20)"/>
+  <ellipse cx="80" cy="20" rx="10" ry="12" fill="#D4A574" transform="rotate(15 80 20)"/>
+  <ellipse cx="80" cy="20" rx="6" ry="8" fill="#F0B0A0" transform="rotate(15 80 20)"/>
+  
+  <!-- Cheeks (puffy) -->
+  <ellipse cx="42" cy="48" rx="12" ry="10" fill="#E8C4A0"/>
+  <ellipse cx="78" cy="48" rx="12" ry="10" fill="#E8C4A0"/>
+  
+  <!-- Eyes -->
+  <circle cx="48" cy="38" r="5" fill="#1A1A2E"/>
+  <circle cx="72" cy="38" r="5" fill="#1A1A2E"/>
+  
+  <!-- Eye shine -->
+  <circle cx="50" cy="36" r="2" fill="white"/>
+  <circle cx="74" cy="36" r="2" fill="white"/>
+  
+  <!-- Nose -->
+  <ellipse cx="60" cy="46" rx="3" ry="2.5" fill="#FF8C94"/>
+  
+  <!-- Mouth -->
+  <path d="M57 50 Q60 54 63 50" fill="none" stroke="#8B5E3C" stroke-width="1.2" stroke-linecap="round"/>
+  
+  <!-- Whiskers -->
+  <line x1="30" y1="44" x2="15" y2="40" stroke="#8B5E3C" stroke-width="1" stroke-linecap="round"/>
+  <line x1="30" y1="48" x2="14" y2="48" stroke="#8B5E3C" stroke-width="1" stroke-linecap="round"/>
+  <line x1="30" y1="52" x2="15" y2="56" stroke="#8B5E3C" stroke-width="1" stroke-linecap="round"/>
+  <line x1="90" y1="44" x2="105" y2="40" stroke="#8B5E3C" stroke-width="1" stroke-linecap="round"/>
+  <line x1="90" y1="48" x2="106" y2="48" stroke="#8B5E3C" stroke-width="1" stroke-linecap="round"/>
+  <line x1="90" y1="52" x2="105" y2="56" stroke="#8B5E3C" stroke-width="1" stroke-linecap="round"/>
+  
+  <!-- Front paws -->
+  <ellipse cx="48" cy="88" rx="6" ry="5" fill="#D4A574"/>
+  <ellipse cx="72" cy="88" rx="6" ry="5" fill="#D4A574"/>
+  
+  <!-- Back feet -->
+  <ellipse cx="38" cy="90" rx="7" ry="4" fill="#D4A574"/>
+  <ellipse cx="82" cy="90" rx="7" ry="4" fill="#D4A574"/>
+  
+  <!-- Cheek blush -->
+  <ellipse cx="42" cy="48" rx="8" ry="6" fill="#FFB5B5" opacity="0.4"/>
+  <ellipse cx="78" cy="48" rx="8" ry="6" fill="#FFB5B5" opacity="0.4"/>
+</svg>

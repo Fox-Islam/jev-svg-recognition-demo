@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#fdf6e3"/>
+  
+  <!-- Neck -->
+  <rect x="170" y="310" width="60" height="60" fill="#f4c8a0"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="200" rx="15" ry="25" fill="#f4c8a0"/>
+  <ellipse cx="295" cy="200" rx="15" ry="25" fill="#f4c8a0"/>
+  <ellipse cx="105" cy="200" rx="7" ry="15" fill="#e0a880"/>
+  <ellipse cx="295" cy="200" rx="7" ry="15" fill="#e0a880"/>
+  
+  <!-- Head / Face -->
+  <ellipse cx="200" cy="200" rx="100" ry="130" fill="#f9d4b0"/>
+  
+  <!-- Hair -->
+  <path d="M 100 160 Q 100 80, 200 70 Q 300 80, 300 160 Q 290 130, 260 125 Q 240 110, 200 115 Q 160 110, 140 125 Q 110 130, 100 160 Z" fill="#4a2c1a"/>
+  <path d="M 105 170 Q 115 150, 145 155 Q 155 140, 180 145 Q 195 130, 220 140 Q 245 130, 265 150 Q 285 150, 295 170" 
+        fill="none" stroke="#4a2c1a" stroke-width="3"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 145 170 Q 165 162, 185 170" stroke="#3a2010" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 215 170 Q 235 162, 255 170" stroke="#3a2010" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes (whites) -->
+  <ellipse cx="160" cy="195" rx="16" ry="11" fill="white"/>
+  <ellipse cx="240" cy="195" rx="16" ry="11" fill="white"/>
+  
+  <!-- Irises -->
+  <circle cx="162" cy="196" r="8" fill="#4a7ba6"/>
+  <circle cx="242" cy="196" r="8" fill="#4a7ba6"/>
+  
+  <!-- Pupils -->
+  <circle cx="163" cy="197" r="4" fill="#1a1a1a"/>
+  <circle cx="243" cy="197" r="4" fill="#1a1a1a"/>
+  
+  <!-- Eye highlights -->
+  <circle cx="165" cy="193" r="1.8" fill="white"/>
+  <circle cx="245" cy="193" r="1.8" fill="white"/>
+  
+  <!-- Nose -->
+  <path d="M 200 205 Q 195 240, 188 250 Q 200 256, 212 250 Q 205 240, 200 205" 
+        fill="#e8b890" stroke="#c99870" stroke-width="1"/>
+  
+  <!-- Cheek blush -->
+  <ellipse cx="140" cy="245" rx="18" ry="10" fill="#ffb3b3" opacity="0.5"/>
+  <ellipse cx="260" cy="245" rx="18" ry="10" fill="#ffb3b3" opacity="0.5"/>
+  
+  <!-- Mouth -->
+  <path d="M 175 275 Q 200 295, 225 275 Q 200 285, 175 275 Z" fill="#c9524a"/>
+  <path d="M 175 275 Q 200 268, 225 275" stroke="#8b2e28" stroke-width="1.5" fill="none"/>
+  <path d="M 180 275 Q 200 280, 220 275" stroke="white" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Chin shadow -->
+  <ellipse cx="200" cy="315" rx="40" ry="6" fill="#e0a880" opacity="0.4"/>
+</svg>

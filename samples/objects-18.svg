@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bellGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8b4fe"/>
+      <stop offset="60%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="tentGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#f0abfc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tentacles -->
+  <g fill="none" stroke="url(#tentGrad)" stroke-width="10" stroke-linecap="round">
+    <path d="M84 140 C74 165 96 180 86 205 C81 218 90 224 86 234"/>
+    <path d="M113 146 C105 172 124 185 115 212 C111 224 119 230 116 240"/>
+    <path d="M143 146 C151 172 132 185 141 212 C145 224 137 230 140 240"/>
+    <path d="M172 140 C182 165 160 180 170 205 C175 218 166 224 170 234"/>
+  </g>
+
+  <!-- Bell -->
+  <path fill="url(#bellGrad)" d="
+    M48 124
+    C48 68 86 32 128 32
+    C170 32 208 68 208 124
+    Q198 140 188 124
+    Q178 140 168 124
+    Q158 140 148 124
+    Q138 140 128 124
+    Q118 140 108 124
+    Q98 140 88 124
+    Q78 140 68 124
+    Q58 140 48 124
+    Z"/>
+
+  <!-- Highlight -->
+  <ellipse cx="98" cy="74" rx="26" ry="16" fill="#ffffff" opacity="0.45" transform="rotate(-25 98 74)"/>
+
+  <!-- Eyes -->
+  <circle cx="106" cy="96" r="6" fill="#312e81"/>
+  <circle cx="150" cy="96" r="6" fill="#312e81"/>
+</svg>

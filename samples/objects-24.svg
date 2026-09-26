@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2A2A2A" />
+      <stop offset="100%" stop-color="#111111" />
+    </radialGradient>
+
+    <!-- Leaf Gradient -->
+    <radialGradient id="leafGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF8A00" />
+      <stop offset="50%" stop-color="#FF0000" />
+      <stop offset="100%" stop-color="#8B0000" />
+    </radialGradient>
+
+    <!-- Drop Shadow for Leaf -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <!-- Right Half of the Leaf (Will be mirrored) -->
+    <g id="half">
+      <path d="M 100 180 L 110 180 L 110 165 
+               Q 130 150, 145 140 
+               Q 130 135, 125 130 
+               Q 145 120, 165 95 
+               Q 145 95, 135 100 
+               Q 145 90, 165 60 
+               Q 145 65, 130 70 
+               Q 145 45, 155 25 
+               Q 135 35, 120 45 
+               Q 120 25, 100 10" />
+    </g>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="98" fill="url(#bgGrad)" stroke="#444444" stroke-width="2" />
+
+  <!-- Leaf Shape (Symmetric) -->
+  <g filter="url(#shadow)">
+    <g fill="url(#leafGrad)" stroke="#7A0000" stroke-width="2" stroke-linejoin="round">
+      <use href="#half" />
+      <use href="#half" transform="scale(-1, 1) translate(-200, 0)" />
+    </g>
+    <!-- Stem -->
+    <path d="M 90 180 L 110 180 L 110 200 L 90 200 Z" fill="#3D1A00" />
+  </g>
+
+  <!-- Veins -->
+  <g fill="none" stroke="#FFCCCC" stroke-linecap="round" stroke-opacity="0.6">
+    <!-- Main Center Vein -->
+    <path d="M 100 180 L 100 20" stroke-width="3" />
+    
+    <!-- Right Side Veins -->
+    <path d="M 100 155 Q 115 145, 140 140" stroke-width="2" />
+    <path d="M 100 140 Q 120 120, 160 95" stroke-width="2" />
+    <path d="M 100 115 Q 130 100, 160 60" stroke-width="2" />
+    <path d="M 100 80 Q 120 60, 150 25" stroke-width="2" />
+    
+    <!-- Left Side Veins -->
+    <path d="M 100 155 Q 85 145, 60 140" stroke-width="2" />
+    <path d="M 100 140 Q 80 120, 40 95" stroke-width="2" />
+    <path d="M 100 115 Q 70 100, 40 60" stroke-width="2" />
+    <path d="M 100 80 Q 80 60, 50 25" stroke-width="2" />
+  </g>
+</svg>

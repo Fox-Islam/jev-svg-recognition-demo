@@ -1,0 +1,115 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Body gradient -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b8c8d8"/>
+      <stop offset="40%" stop-color="#9fb4c4"/>
+      <stop offset="100%" stop-color="#6e8496"/>
+    </linearGradient>
+    <!-- Tail gradient: red to black -->
+    <radialGradient id="tailGrad" cx="20%" cy="50%" r="90%">
+      <stop offset="0%" stop-color="#ff4a3d"/>
+      <stop offset="45%" stop-color="#d8201c"/>
+      <stop offset="75%" stop-color="#7a0d12"/>
+      <stop offset="100%" stop-color="#1a0508"/>
+    </radialGradient>
+    <!-- Dorsal fin gradient -->
+    <linearGradient id="dorsalGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d8201c"/>
+      <stop offset="100%" stop-color="#2a0a0c"/>
+    </linearGradient>
+    <!-- Shimmer on body -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#cfe8ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#0e2a3f"/>
+  <circle cx="80" cy="320" r="6" fill="#ffffff" opacity="0.12"/>
+  <circle cx="100" cy="280" r="4" fill="#ffffff" opacity="0.10"/>
+  <circle cx="65" cy="250" r="3" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Big fan tail (caudal fin) -->
+  <path d="M 360 200
+           C 410 130, 480 90, 545 95
+           C 560 140, 565 175, 560 200
+           C 565 225, 560 260, 545 305
+           C 480 310, 410 270, 360 200 Z"
+        fill="url(#tailGrad)" stroke="#12060a" stroke-width="2"/>
+
+  <!-- Tail ray lines -->
+  <g stroke="#1a0508" stroke-width="1.5" opacity="0.55" fill="none">
+    <path d="M 365 195 C 420 140, 480 105, 540 100"/>
+    <path d="M 368 200 C 430 165, 495 145, 552 150"/>
+    <path d="M 368 205 C 435 200, 500 200, 558 200"/>
+    <path d="M 368 210 C 430 235, 495 255, 552 252"/>
+    <path d="M 365 215 C 420 262, 480 297, 540 300"/>
+  </g>
+
+  <!-- Black spots on tail -->
+  <g fill="#120407" opacity="0.85">
+    <ellipse cx="470" cy="150" rx="14" ry="10"/>
+    <ellipse cx="505" cy="210" rx="12" ry="9"/>
+    <ellipse cx="465" cy="260" rx="13" ry="10"/>
+    <ellipse cx="425" cy="195" rx="9" ry="7"/>
+  </g>
+
+  <!-- Dorsal fin -->
+  <path d="M 250 152
+           C 270 110, 320 95, 360 105
+           C 345 130, 330 148, 305 158 Z"
+        fill="url(#dorsalGrad)" stroke="#12060a" stroke-width="1.5"/>
+
+  <!-- Body -->
+  <path d="M 110 200
+           C 140 160, 220 145, 285 155
+           C 335 162, 365 180, 372 200
+           C 365 220, 335 238, 285 245
+           C 220 255, 140 240, 110 200 Z"
+        fill="url(#bodyGrad)" stroke="#4d6273" stroke-width="2"/>
+
+  <!-- Shimmer stripe -->
+  <path d="M 130 195 C 180 175, 280 170, 350 192
+           C 280 198, 180 200, 130 195 Z"
+        fill="url(#shimmer)"/>
+
+  <!-- Red blush near tail base -->
+  <path d="M 330 170 C 355 180, 368 192, 372 200
+           C 368 208, 355 220, 330 230
+           C 345 210, 345 190, 330 170 Z"
+        fill="#d8201c" opacity="0.6"/>
+
+  <!-- Black accent spot on body -->
+  <ellipse cx="305" cy="200" rx="14" ry="11" fill="#161a1e" opacity="0.8"/>
+
+  <!-- Gill line -->
+  <path d="M 165 168 C 178 188, 178 212, 165 232"
+        fill="none" stroke="#55707f" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Pectoral fin -->
+  <path d="M 195 210 C 215 225, 220 245, 205 258
+           C 192 245, 188 226, 195 210 Z"
+        fill="#e0533f" opacity="0.75" stroke="#7a0d12" stroke-width="1"/>
+
+  <!-- Anal fin -->
+  <path d="M 265 242 C 275 268, 295 280, 315 278
+           C 305 260, 295 248, 282 240 Z"
+        fill="url(#dorsalGrad)" opacity="0.9" stroke="#12060a" stroke-width="1"/>
+
+  <!-- Eye -->
+  <circle cx="142" cy="195" r="13" fill="#101418"/>
+  <circle cx="142" cy="195" r="9" fill="#2e3a44"/>
+  <circle cx="139" cy="191" r="4" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Mouth -->
+  <path d="M 110 200 C 115 203, 120 204, 124 203"
+        fill="none" stroke="#3f5263" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Bubbles from mouth -->
+  <circle cx="95" cy="185" r="5" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="85" cy="165" r="7" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="92" cy="142" r="4" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.25"/>
+</svg>

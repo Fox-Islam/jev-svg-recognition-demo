@@ -1,0 +1,70 @@
+<svg width="300" height="240" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg">
+  <title>Rubik's Cube</title>
+  <desc>An isometric Rubik's cube made from SVG polygons.</desc>
+
+  <style>
+    .sticker {
+      stroke: #111;
+      stroke-width: 3;
+      stroke-linejoin: round;
+    }
+    .outline {
+      fill: none;
+      stroke: #111;
+      stroke-width: 5;
+      stroke-linejoin: round;
+    }
+  </style>
+
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- Top face -->
+    <polygon class="sticker" fill="#ffd500" points="105,83 120,74 135,83 120,92"/>
+    <polygon class="sticker" fill="#0051ba" points="120,74 135,65 150,74 135,83"/>
+    <polygon class="sticker" fill="#f5f5f5" points="135,65 150,56 165,65 150,74"/>
+
+    <polygon class="sticker" fill="#009e60" points="120,92 135,83 150,92 135,101"/>
+    <polygon class="sticker" fill="#ffd500" points="135,83 150,74 165,83 150,92"/>
+    <polygon class="sticker" fill="#c41e3a" points="150,74 165,65 180,74 165,83"/>
+
+    <polygon class="sticker" fill="#ff5800" points="135,101 150,92 165,101 150,110"/>
+    <polygon class="sticker" fill="#f5f5f5" points="150,92 165,83 180,92 165,101"/>
+    <polygon class="sticker" fill="#ffd500" points="165,83 180,74 195,83 180,92"/>
+
+    <!-- Left face -->
+    <polygon class="sticker" fill="#ff5800" points="105,83 120,92 120,112 105,103"/>
+    <polygon class="sticker" fill="#009e60" points="120,92 135,101 135,121 120,112"/>
+    <polygon class="sticker" fill="#c41e3a" points="135,101 150,110 150,130 135,121"/>
+
+    <polygon class="sticker" fill="#0051ba" points="105,103 120,112 120,132 105,123"/>
+    <polygon class="sticker" fill="#ff5800" points="120,112 135,121 135,141 120,132"/>
+    <polygon class="sticker" fill="#f5f5f5" points="135,121 150,130 150,150 135,141"/>
+
+    <polygon class="sticker" fill="#ffd500" points="105,123 120,132 120,152 105,143"/>
+    <polygon class="sticker" fill="#c41e3a" points="120,132 135,141 135,161 120,152"/>
+    <polygon class="sticker" fill="#009e60" points="135,141 150,150 150,170 135,161"/>
+
+    <!-- Right face -->
+    <polygon class="sticker" fill="#0051ba" points="150,110 165,101 165,121 150,130"/>
+    <polygon class="sticker" fill="#ffd500" points="165,101 180,92 180,112 165,121"/>
+    <polygon class="sticker" fill="#009e60" points="180,92 195,83 195,103 180,112"/>
+
+    <polygon class="sticker" fill="#c41e3a" points="150,130 165,121 165,141 150,150"/>
+    <polygon class="sticker" fill="#0051ba" points="165,121 180,112 180,132 165,141"/>
+    <polygon class="sticker" fill="#ff5800" points="180,112 195,103 195,123 180,132"/>
+
+    <polygon class="sticker" fill="#f5f5f5" points="150,150 165,141 165,161 150,170"/>
+    <polygon class="sticker" fill="#009e60" points="165,141 180,132 180,152 165,161"/>
+    <polygon class="sticker" fill="#0051ba" points="180,132 195,123 195,143 180,152"/>
+
+    <!-- Outer outlines -->
+    <polygon class="outline" points="105,83 150,56 195,83 150,110"/>
+    <polygon class="outline" points="105,83 150,110 150,170 105,143"/>
+    <polygon class="outline" points="150,110 195,83 195,143 150,170"/>
+  </g>
+</svg>

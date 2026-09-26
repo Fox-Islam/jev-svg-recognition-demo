@@ -1,0 +1,30 @@
+[project]
+name = "jev-svg-recognition-demo"
+version = "0.1.0"
+description = "A page that classifies an SVG from Jev's answers to 100 yes/no questions, and the server behind it"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Fox Islam", email = "foxislam@outlook.com" }]
+# only the SVG preparation is used at run time; scripts/build_assets.py also needs its data and classifier
+dependencies = ["jev-svg-recognition"]
+
+[tool.uv.sources]
+jev-svg-recognition = { path = "../jev-svg-recognition", editable = true }
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 130
+
+[tool.ruff.format]
+quote-style = "single"

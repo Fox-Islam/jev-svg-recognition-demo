@@ -1,0 +1,114 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sky gradient -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf3d8"/>
+      <stop offset="60%" stop-color="#f7e3b5"/>
+      <stop offset="100%" stop-color="#eeD49a"/>
+    </linearGradient>
+    <!-- Wave gradients -->
+    <linearGradient id="waveDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b4a7a"/>
+      <stop offset="100%" stop-color="#0d2c4d"/>
+    </linearGradient>
+    <linearGradient id="waveMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a7cb8"/>
+      <stop offset="100%" stop-color="#1b4a7a"/>
+    </linearGradient>
+    <linearGradient id="waveLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7db8de"/>
+      <stop offset="100%" stop-color="#3a7cb8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="630" cy="130" r="55" fill="#f5c95e" opacity="0.9"/>
+  <circle cx="630" cy="130" r="70" fill="#f5c95e" opacity="0.25"/>
+
+  <!-- Background swell -->
+  <path d="M0,420 Q150,380 300,410 T600,400 T800,415 L800,600 L0,600 Z"
+        fill="url(#waveLight)"/>
+
+  <!-- The big wave body with curling crest -->
+  <path d="M800,600 L800,480
+           Q700,460 620,420
+           Q500,360 430,250
+           Q390,180 300,140
+           Q200,95 120,130
+           Q60,158 40,220
+           Q90,180 160,185
+           Q230,190 270,240
+           Q240,225 200,235
+           Q250,250 280,300
+           Q230,280 190,300
+           Q260,320 290,380
+           Q310,430 280,470
+           Q330,455 360,410
+           Q400,470 380,540
+           Q430,510 445,450
+           Q520,520 510,600 Z"
+        fill="url(#waveDeep)"/>
+
+  <!-- Inner face of the wave (lighter water) -->
+  <path d="M800,600 L800,520
+           Q690,495 610,450
+           Q510,395 455,300
+           Q470,380 430,440
+           Q480,480 470,560
+           Q500,540 520,600 Z"
+        fill="url(#waveMid)"/>
+
+  <!-- Foam fingers on the crest -->
+  <g fill="#ffffff">
+    <path d="M40,220 Q55,200 80,196 Q60,212 58,232 Q75,210 100,206
+             Q82,224 84,244 Q100,222 126,220 Q110,238 114,256
+             Q132,236 158,238 Q144,254 150,272 Q166,254 190,260
+             Q176,274 184,290 Q150,280 120,255 Q80,250 40,220 Z" opacity="0.95"/>
+    <circle cx="170" cy="195" r="10"/>
+    <circle cx="200" cy="215" r="8"/>
+    <circle cx="145" cy="220" r="7"/>
+    <circle cx="230" cy="250" r="9"/>
+    <circle cx="210" cy="280" r="6"/>
+    <circle cx="255" cy="290" r="8"/>
+    <circle cx="245" cy="320" r="6"/>
+    <circle cx="285" cy="345" r="7"/>
+    <circle cx="120" cy="185" r="6"/>
+    <circle cx="95" cy="175" r="5"/>
+  </g>
+
+  <!-- Foam streaks on the wave face -->
+  <g stroke="#cfe6f5" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.7">
+    <path d="M430,260 Q480,340 560,400"/>
+    <path d="M390,300 Q430,380 500,440"/>
+    <path d="M620,430 Q700,470 780,495"/>
+    <path d="M300,420 Q330,470 320,530"/>
+  </g>
+
+  <!-- Foreground wave -->
+  <path d="M0,600 L0,470
+           Q80,430 170,460
+           Q260,490 340,465
+           Q430,438 520,475
+           Q610,512 700,490
+           Q760,476 800,492 L800,600 Z"
+        fill="url(#waveDeep)"/>
+
+  <!-- Foreground foam caps -->
+  <g fill="#ffffff" opacity="0.9">
+    <path d="M0,470 Q40,452 90,455 Q60,468 70,482 Q100,462 140,468 Q115,480 130,492 Q160,474 200,482 Q175,495 195,505 Q150,500 110,488 Q55,485 0,470 Z"/>
+    <path d="M340,465 Q380,448 430,452 Q400,465 415,478 Q450,460 495,470 Q468,482 485,494 Q440,488 400,480 Q368,476 340,465 Z"/>
+  </g>
+
+  <!-- Splash droplets -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="320" cy="120" r="5"/>
+    <circle cx="350" cy="150" r="4"/>
+    <circle cx="290" cy="100" r="4"/>
+    <circle cx="380" cy="190" r="5"/>
+    <circle cx="260" cy="115" r="3"/>
+    <circle cx="410" cy="225" r="4"/>
+  </g>
+</svg>

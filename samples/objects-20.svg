@@ -1,0 +1,110 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Friendly lion</title>
+  <desc id="desc">A stylized lion head with a golden face, rounded ears, whiskers, and a full orange-brown mane.</desc>
+
+  <defs>
+    <radialGradient id="faceGradient" cx="38%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="#FFD978"/>
+      <stop offset="65%" stop-color="#F0A93B"/>
+      <stop offset="100%" stop-color="#D98422"/>
+    </radialGradient>
+
+    <radialGradient id="maneGradient" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#D77A25"/>
+      <stop offset="70%" stop-color="#A94F19"/>
+      <stop offset="100%" stop-color="#743111"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+
+    <ellipse id="manePetal" cx="256" cy="94" rx="44" ry="78"/>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- Mane petals -->
+    <g stroke="#743111" stroke-width="3" stroke-linejoin="round">
+      <use href="#manePetal" fill="#C96720" transform="rotate(0 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(22.5 256 256)"/>
+      <use href="#manePetal" fill="#C96720" transform="rotate(45 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(67.5 256 256)"/>
+      <use href="#manePetal" fill="#C96720" transform="rotate(90 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(112.5 256 256)"/>
+      <use href="#manePetal" fill="#C96720" transform="rotate(135 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(157.5 256 256)"/>
+      <use href="#manePetal" fill="#C96720" transform="rotate(180 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(202.5 256 256)"/>
+      <use href="#manePetal" fill="#C96720" transform="rotate(225 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(247.5 256 256)"/>
+      <use href="#manePetal" fill="#C96720" transform="rotate(270 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(292.5 256 256)"/>
+      <use href="#manePetal" fill="#C96720" transform="rotate(315 256 256)"/>
+      <use href="#manePetal" fill="#B9561B" transform="rotate(337.5 256 256)"/>
+    </g>
+
+    <!-- Main mane body -->
+    <circle cx="256" cy="256" r="166" fill="url(#maneGradient)" stroke="#743111" stroke-width="4"/>
+    <circle cx="256" cy="256" r="142" fill="#D16D22" opacity="0.45"/>
+
+    <!-- Ears -->
+    <g stroke="#743111" stroke-width="4">
+      <circle cx="144" cy="190" r="50" fill="#9A4718"/>
+      <circle cx="368" cy="190" r="50" fill="#9A4718"/>
+      <circle cx="144" cy="190" r="29" fill="#F0B35B"/>
+      <circle cx="368" cy="190" r="29" fill="#F0B35B"/>
+    </g>
+
+    <!-- Face -->
+    <circle cx="256" cy="260" r="126" fill="url(#faceGradient)" stroke="#8A3C14" stroke-width="4"/>
+
+    <!-- Forehead tufts -->
+    <path d="M221 154 C239 171 242 194 230 215 C248 201 264 178 256 153 C273 171 282 195 273 218 C294 203 302 179 291 157"
+          fill="none" stroke="#8A3C14" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Eyes -->
+    <ellipse cx="214" cy="242" rx="16" ry="21" fill="#2B1A12"/>
+    <ellipse cx="298" cy="242" rx="16" ry="21" fill="#2B1A12"/>
+    <circle cx="208" cy="234" r="5" fill="#FFFFFF"/>
+    <circle cx="292" cy="234" r="5" fill="#FFFFFF"/>
+
+    <!-- Eyebrows -->
+    <path d="M193 220 Q214 207 234 220" fill="none" stroke="#8A3C14" stroke-width="7" stroke-linecap="round"/>
+    <path d="M278 220 Q298 207 319 220" fill="none" stroke="#8A3C14" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Muzzle -->
+    <ellipse cx="224" cy="304" rx="47" ry="38" fill="#FFE2A5"/>
+    <ellipse cx="288" cy="304" rx="47" ry="38" fill="#FFE2A5"/>
+    <ellipse cx="256" cy="333" rx="45" ry="34" fill="#FFE2A5"/>
+
+    <!-- Nose -->
+    <path d="M235 286 Q256 270 277 286 Q273 306 256 312 Q239 306 235 286Z"
+          fill="#4B2118"/>
+
+    <!-- Mouth -->
+    <path d="M256 311 L256 326" fill="none" stroke="#4B2118" stroke-width="5" stroke-linecap="round"/>
+    <path d="M256 326 C246 340 226 339 218 326" fill="none" stroke="#4B2118" stroke-width="5" stroke-linecap="round"/>
+    <path d="M256 326 C266 340 286 339 294 326" fill="none" stroke="#4B2118" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Whisker dots -->
+    <g fill="#8A3C14">
+      <circle cx="217" cy="293" r="3.5"/>
+      <circle cx="203" cy="310" r="3.5"/>
+      <circle cx="229" cy="316" r="3.5"/>
+      <circle cx="295" cy="293" r="3.5"/>
+      <circle cx="309" cy="310" r="3.5"/>
+      <circle cx="283" cy="316" r="3.5"/>
+    </g>
+
+    <!-- Whiskers -->
+    <g fill="none" stroke="#6B351D" stroke-width="4" stroke-linecap="round" opacity="0.85">
+      <path d="M210 301 C176 291 143 295 113 312"/>
+      <path d="M211 316 C177 316 148 327 124 349"/>
+      <path d="M302 301 C336 291 369 295 399 312"/>
+      <path d="M301 316 C335 316 364 327 388 349"/>
+    </g>
+
+    <!-- Chin detail -->
+    <path d="M232 374 Q256 390 280 374" fill="none" stroke="#8A3C14" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

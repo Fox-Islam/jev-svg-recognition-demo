@@ -1,0 +1,2 @@
+# LF in the repository and in every checkout: tests compare file bytes and sha1s, which CRLF would change
+* text=auto eol=lf

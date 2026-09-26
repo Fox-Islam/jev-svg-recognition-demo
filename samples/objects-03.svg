@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  
+  <!-- Leaf -->
+  <path d="M105 25 Q130 5 145 15 Q130 35 105 25 Z" fill="#4CAF50" />
+  
+  <!-- Leaf vein -->
+  <path d="M105 25 Q125 15 143 15" stroke="#388E3C" stroke-width="1" fill="none" />
+
+  <!-- Stem -->
+  <path d="M108 30 Q112 15 110 5" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round" />
+
+  <!-- Apple body -->
+  <path d="
+    M 60 55
+    Q 20 55 15 100
+    Q 10 145 40 175
+    Q 60 195 100 195
+    Q 140 195 160 175
+    Q 190 145 185 100
+    Q 180 55 140 55
+    Q 125 45 108 50
+    Q 90 45 60 55 Z
+  " fill="#E53935" />
+
+  <!-- Bite chunk removed (white background or transparent) -->
+  <path d="
+    M 140 55
+    Q 165 58 172 80
+    Q 178 100 165 115
+    Q 150 130 135 120
+    Q 118 108 125 85
+    Q 128 65 140 55 Z
+  " fill="white" />
+
+  <!-- Bite inner flesh color -->
+  <path d="
+    M 140 55
+    Q 165 58 172 80
+    Q 178 100 165 115
+    Q 150 130 135 120
+    Q 118 108 125 85
+    Q 128 65 140 55 Z
+  " fill="#FFCCBC" opacity="0.9"/>
+
+  <!-- Bite shadow/depth -->
+  <path d="
+    M 140 58
+    Q 162 62 168 82
+    Q 173 100 161 113
+    Q 148 126 136 118
+    Q 122 108 128 87
+    Q 131 67 140 58 Z
+  " fill="none" stroke="#E64A19" stroke-width="1.5" />
+
+  <!-- Apple shine/highlight -->
+  <ellipse cx="75" cy="85" rx="18" ry="25" fill="white" opacity="0.2" transform="rotate(-20 75 85)" />
+  <ellipse cx="70" cy="80" rx="8" ry="12" fill="white" opacity="0.25" transform="rotate(-20 70 80)" />
+
+  <!-- Apple shadow at bottom -->
+  <ellipse cx="100" cy="192" rx="45" ry="8" fill="#B71C1C" opacity="0.3" />
+
+</svg>

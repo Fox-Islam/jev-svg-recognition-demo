@@ -1,0 +1,53 @@
+<svg width="400" height="450" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Neck -->
+  <rect x="170" y="320" width="60" height="80" fill="#f0c8a0"/>
+  
+  <!-- Face shape -->
+  <ellipse cx="200" cy="220" rx="120" ry="150" fill="#ffdbac"/>
+  
+  <!-- Ears -->
+  <ellipse cx="85" cy="220" rx="20" ry="35" fill="#ffdbac"/>
+  <ellipse cx="315" cy="220" rx="20" ry="35" fill="#ffdbac"/>
+  <ellipse cx="88" cy="220" rx="10" ry="20" fill="#f0c8a0"/>
+  <ellipse cx="312" cy="220" rx="10" ry="20" fill="#f0c8a0"/>
+  
+  <!-- Hair -->
+  <path d="M 80 180 Q 80 70 200 70 Q 320 70 320 180 Q 320 140 280 130 
+           Q 300 100 200 100 Q 100 100 120 130 Q 80 140 80 180 Z" 
+        fill="#4a3520"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 120 175 Q 150 165 180 175" stroke="#4a3520" stroke-width="6" 
+        fill="none" stroke-linecap="round"/>
+  <path d="M 220 175 Q 250 165 280 175" stroke="#4a3520" stroke-width="6" 
+        fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="150" cy="200" rx="25" ry="15" fill="white"/>
+  <ellipse cx="250" cy="200" rx="25" ry="15" fill="white"/>
+  
+  <!-- Iris -->
+  <circle cx="150" cy="200" r="12" fill="#6b4423"/>
+  <circle cx="250" cy="200" r="12" fill="#6b4423"/>
+  
+  <!-- Pupils -->
+  <circle cx="150" cy="200" r="6" fill="#000"/>
+  <circle cx="250" cy="200" r="6" fill="#000"/>
+  
+  <!-- Eye highlights -->
+  <circle cx="153" cy="196" r="3" fill="white"/>
+  <circle cx="253" cy="196" r="3" fill="white"/>
+  
+  <!-- Nose -->
+  <path d="M 200 210 L 190 260 Q 200 270 210 260 Z" fill="#f0c8a0"/>
+  <ellipse cx="190" cy="262" rx="4" ry="3" fill="#e0b890"/>
+  <ellipse cx="210" cy="262" rx="4" ry="3" fill="#e0b890"/>
+  
+  <!-- Mouth -->
+  <path d="M 160 300 Q 200 325 240 300" stroke="#c97b6b" stroke-width="5" 
+        fill="none" stroke-linecap="round"/>
+  
+  <!-- Cheeks (blush) -->
+  <ellipse cx="130" cy="250" rx="20" ry="12" fill="#ffb3a0" opacity="0.4"/>
+  <ellipse cx="270" cy="250" rx="20" ry="12" fill="#ffb3a0" opacity="0.4"/>
+</svg>

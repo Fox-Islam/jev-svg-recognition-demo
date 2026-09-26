@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <!-- Stem -->
+  <path d="M100 74 C 98 60, 100 48, 106 36"
+        stroke="#7a4a21" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Leaf -->
+  <path d="M108 50 C 118 30, 144 28, 156 36 C 150 54, 126 64, 108 50 Z"
+        fill="#4caf50"/>
+  <path d="M112 48 C 124 42, 138 38, 150 38"
+        stroke="#388e3c" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Apple body with bite taken out of the right side -->
+  <path d="M100 78
+           C 92 60, 60 54, 44 72
+           C 22 96, 22 148, 48 180
+           C 64 200, 86 212, 100 202
+           C 112 211, 132 202, 148 184
+           C 156 175, 162 164, 166 152
+           A 15 15 0 0 1 158 124
+           A 16 16 0 0 1 160 94
+           C 156 84, 150 76, 142 70
+           C 126 56, 108 60, 100 78 Z"
+        fill="#e53935"/>
+
+  <!-- Shading on the right -->
+  <path d="M100 202 C 112 211, 132 202, 148 184
+           C 156 175, 162 164, 166 152
+           A 15 15 0 0 1 158 124
+           A 16 16 0 0 1 160 94
+           C 156 84, 150 76, 142 70
+           C 150 90, 152 140, 130 175
+           C 122 188, 112 197, 100 202 Z"
+        fill="#c62828" opacity="0.6"/>
+
+  <!-- Highlight -->
+  <ellipse cx="68" cy="112" rx="14" ry="28"
+           fill="#ffffff" opacity="0.35"
+           transform="rotate(-15 68 112)"/>
+</svg>

@@ -1,0 +1,794 @@
+[
+ {
+  "file": "objects-00.svg",
+  "model": "objects",
+  "label": "backpack",
+  "source": "gpt-5.6-luna-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.6-luna-high|backpack",
+  "sha1_colour": "0d00bfa16aeaf415005750037d1a1d587b055644"
+ },
+ {
+  "file": "objects-01.svg",
+  "model": "objects",
+  "label": "backpack",
+  "source": "qwen3.7-max-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:qwen3.7-max-preview|backpack",
+  "sha1_colour": "5033c3d1613b385bfff72cc2cf33cf0f5a80bf98"
+ },
+ {
+  "file": "objects-02.svg",
+  "model": "objects",
+  "label": "bitten apple",
+  "source": "claude-fable-5-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5-thinking|bitten apple",
+  "sha1_colour": "9e83a5a294b2b31f4f8f1beb01f355ad860c0019"
+ },
+ {
+  "file": "objects-03.svg",
+  "model": "objects",
+  "label": "bitten apple",
+  "source": "claude-sonnet-4.6",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-sonnet-4.6|bitten apple",
+  "sha1_colour": "5f3acc8aa8e795ab896cb260fd486aa80dece9a9"
+ },
+ {
+  "file": "objects-04.svg",
+  "model": "objects",
+  "label": "circus tent",
+  "source": "gpt-5.5-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.5-high|circus tent",
+  "sha1_colour": "5b6fc46189e8e6867821efd4ef2e56beebe2b756"
+ },
+ {
+  "file": "objects-05.svg",
+  "model": "objects",
+  "label": "circus tent",
+  "source": "deepseek-v4-flash",
+  "recipe": "rapidata",
+  "item_id": "rapidata:deepseek-v4-flash|circus tent",
+  "sha1_colour": "1f633221857c8539719261d326a2f5567cf7b7d8"
+ },
+ {
+  "file": "objects-06.svg",
+  "model": "objects",
+  "label": "coffee",
+  "source": "kimi-k2.6",
+  "recipe": "rapidata",
+  "item_id": "rapidata:kimi-k2.6|coffee",
+  "sha1_colour": "5f8e5a9151fac7de1836759385ef542299f71b11"
+ },
+ {
+  "file": "objects-07.svg",
+  "model": "objects",
+  "label": "coffee",
+  "source": "qwen3.7-max-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:qwen3.7-max-preview|coffee",
+  "sha1_colour": "92ec011e0335a855defca5d4c5db14478d3c1796"
+ },
+ {
+  "file": "objects-08.svg",
+  "model": "objects",
+  "label": "fridge",
+  "source": "gemini-3.1-pro-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gemini-3.1-pro-preview|fridge",
+  "sha1_colour": "a002193bfd3347fc1d0fd4068c8a434eb28b2b71"
+ },
+ {
+  "file": "objects-09.svg",
+  "model": "objects",
+  "label": "fridge",
+  "source": "claude-opus-4-8-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-opus-4-8-thinking|fridge",
+  "sha1_colour": "b30f2e5155d5f2d71387fb5b7f16fdcf4fa75683"
+ },
+ {
+  "file": "objects-10.svg",
+  "model": "objects",
+  "label": "fuel station",
+  "source": "claude-opus-4-7-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-opus-4-7-thinking|fuel station",
+  "sha1_colour": "f6ab92fb2e7e28c9de4ebb6e720a827c324b9c0d"
+ },
+ {
+  "file": "objects-11.svg",
+  "model": "objects",
+  "label": "fuel station",
+  "source": "claude-sonnet-4.6",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-sonnet-4.6|fuel station",
+  "sha1_colour": "f7db513d6835023c76f67d5d387e9043108b4ca0"
+ },
+ {
+  "file": "objects-12.svg",
+  "model": "objects",
+  "label": "guppy",
+  "source": "claude-fable-5-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5-thinking|guppy",
+  "sha1_colour": "baf13eeb3c98cca8622b3b2e9f26e0d436e02e73"
+ },
+ {
+  "file": "objects-13.svg",
+  "model": "objects",
+  "label": "guppy",
+  "source": "gpt-5.5-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.5-high|guppy",
+  "sha1_colour": "5f50b428adbe80a9e18f39ca027c44171c404591"
+ },
+ {
+  "file": "objects-14.svg",
+  "model": "objects",
+  "label": "hamster",
+  "source": "deepseek-v4-flash",
+  "recipe": "rapidata",
+  "item_id": "rapidata:deepseek-v4-flash|hamster",
+  "sha1_colour": "b2f6db95ae7de2431c255b00c80188e0f4b022cb"
+ },
+ {
+  "file": "objects-15.svg",
+  "model": "objects",
+  "label": "hamster",
+  "source": "gemini-3.1-pro-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gemini-3.1-pro-preview|hamster",
+  "sha1_colour": "aa81931ff9ccda22af6d2c28550561d37bb28466"
+ },
+ {
+  "file": "objects-16.svg",
+  "model": "objects",
+  "label": "human face",
+  "source": "claude-opus-4-8-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-opus-4-8-thinking|human face",
+  "sha1_colour": "19a10d405f21099dfdf880aeb51a5c92586cbd74"
+ },
+ {
+  "file": "objects-17.svg",
+  "model": "objects",
+  "label": "human face",
+  "source": "qwen3.7-max-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:qwen3.7-max-preview|human face",
+  "sha1_colour": "1922829361f89362a80b9101fbbd7f081f70296c"
+ },
+ {
+  "file": "objects-18.svg",
+  "model": "objects",
+  "label": "jellyfish",
+  "source": "claude-fable-5",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5|jellyfish",
+  "sha1_colour": "a48f902af4a9dc9960f46ef05426f46b661bf2b9"
+ },
+ {
+  "file": "objects-19.svg",
+  "model": "objects",
+  "label": "jellyfish",
+  "source": "gpt-5.5-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.5-high|jellyfish",
+  "sha1_colour": "97fe0c8a99bd71fa830fc01b02e2e4a8b0698738"
+ },
+ {
+  "file": "objects-20.svg",
+  "model": "objects",
+  "label": "lion",
+  "source": "gpt-5.5-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.5-high|lion",
+  "sha1_colour": "8778c4d88e41b14994ba4a03a2e3338e5f16af0e"
+ },
+ {
+  "file": "objects-21.svg",
+  "model": "objects",
+  "label": "lion",
+  "source": "qwen3.7-max-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:qwen3.7-max-preview|lion",
+  "sha1_colour": "f2e2b03cdd8a0cad13f085655cfde949cc33068f"
+ },
+ {
+  "file": "objects-22.svg",
+  "model": "objects",
+  "label": "lipstick",
+  "source": "claude-opus-4-7-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-opus-4-7-thinking|lipstick",
+  "sha1_colour": "ef28d4b0887da15b1a52fa9ef06f536be954d047"
+ },
+ {
+  "file": "objects-23.svg",
+  "model": "objects",
+  "label": "lipstick",
+  "source": "claude-sonnet-4.6",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-sonnet-4.6|lipstick",
+  "sha1_colour": "320352b5fd75c9b90a8834cf93ba0f05dcde1708"
+ },
+ {
+  "file": "objects-24.svg",
+  "model": "objects",
+  "label": "maple leaf",
+  "source": "deepseek-v4-pro-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:deepseek-v4-pro-thinking|maple leaf",
+  "sha1_colour": "8f28c799784cd5da15aab196728c110c8aade49e"
+ },
+ {
+  "file": "objects-25.svg",
+  "model": "objects",
+  "label": "maple leaf",
+  "source": "quiver-arrow-1.1",
+  "recipe": "rapidata",
+  "item_id": "rapidata:quiver-arrow-1.1|maple leaf",
+  "sha1_colour": "0a6a58a8ced8f49ae57128dfd96171134ba2809e"
+ },
+ {
+  "file": "objects-26.svg",
+  "model": "objects",
+  "label": "microphone",
+  "source": "claude-fable-5-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5-thinking|microphone",
+  "sha1_colour": "31f846be1546dbfa9b208e4aa2eba656880391b7"
+ },
+ {
+  "file": "objects-27.svg",
+  "model": "objects",
+  "label": "microphone",
+  "source": "gemini-3.1-pro-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gemini-3.1-pro-preview|microphone",
+  "sha1_colour": "9395661209d1aeb5b16be4831f1643e6698fd5fc"
+ },
+ {
+  "file": "objects-28.svg",
+  "model": "objects",
+  "label": "newspaper",
+  "source": "claude-sonnet-4.6",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-sonnet-4.6|newspaper",
+  "sha1_colour": "9871a563f1812324a39aa1cb4e32bd71817488b4"
+ },
+ {
+  "file": "objects-29.svg",
+  "model": "objects",
+  "label": "newspaper",
+  "source": "deepseek-v4-flash",
+  "recipe": "rapidata",
+  "item_id": "rapidata:deepseek-v4-flash|newspaper",
+  "sha1_colour": "c91131c72231c448019688794784f9c6895b49fa"
+ },
+ {
+  "file": "objects-30.svg",
+  "model": "objects",
+  "label": "paperclip",
+  "source": "claude-fable-5-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5-thinking|paperclip",
+  "sha1_colour": "bf31937852bbe9b94da978c6c1297e9a9f9e046a"
+ },
+ {
+  "file": "objects-31.svg",
+  "model": "objects",
+  "label": "paperclip",
+  "source": "gemini-3.5-flash",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gemini-3.5-flash|paperclip",
+  "sha1_colour": "8dc0ca3c5255684257075c15844d65a335ed296b"
+ },
+ {
+  "file": "objects-32.svg",
+  "model": "objects",
+  "label": "phone case",
+  "source": "claude-opus-4-8-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-opus-4-8-thinking|phone case",
+  "sha1_colour": "aa7266260d8d280385fc5657f43d0e36120190e3"
+ },
+ {
+  "file": "objects-33.svg",
+  "model": "objects",
+  "label": "phone case",
+  "source": "claude-opus-4-7-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-opus-4-7-thinking|phone case",
+  "sha1_colour": "32abca27b6cf4197c20a9a2effaa1bbe154f56b9"
+ },
+ {
+  "file": "objects-34.svg",
+  "model": "objects",
+  "label": "popcorn",
+  "source": "qwen3.7-max-preview",
+  "recipe": "rapidata",
+  "item_id": "rapidata:qwen3.7-max-preview|popcorn",
+  "sha1_colour": "297709a513585008e87ebd152af6ec46e834623f"
+ },
+ {
+  "file": "objects-35.svg",
+  "model": "objects",
+  "label": "popcorn",
+  "source": "claude-fable-5-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5-thinking|popcorn",
+  "sha1_colour": "c1d0ca433ddb959606dda1d384ea3392a28a3bae"
+ },
+ {
+  "file": "objects-36.svg",
+  "model": "objects",
+  "label": "rose",
+  "source": "gpt-5.6-luna-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.6-luna-high|rose",
+  "sha1_colour": "8cfa01dc47b80bd7582ac85d3d9e727b543b4fea"
+ },
+ {
+  "file": "objects-37.svg",
+  "model": "objects",
+  "label": "rose",
+  "source": "gpt-5.5-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.5-high|rose",
+  "sha1_colour": "130b89d556b1d384b7e93a5155a6636c8d27f6fd"
+ },
+ {
+  "file": "objects-38.svg",
+  "model": "objects",
+  "label": "rubiks cube",
+  "source": "gpt-5.5-high",
+  "recipe": "rapidata",
+  "item_id": "rapidata:gpt-5.5-high|rubiks cube",
+  "sha1_colour": "6b237ecf8e964cbe06a5a503e9839b2731215b03"
+ },
+ {
+  "file": "objects-39.svg",
+  "model": "objects",
+  "label": "rubiks cube",
+  "source": "quiver-arrow-1.1",
+  "recipe": "rapidata",
+  "item_id": "rapidata:quiver-arrow-1.1|rubiks cube",
+  "sha1_colour": "b2257450340e890d212fb6b37cbb854af1f4838e"
+ },
+ {
+  "file": "objects-40.svg",
+  "model": "objects",
+  "label": "skateboard",
+  "source": "kimi-k2.6",
+  "recipe": "rapidata",
+  "item_id": "rapidata:kimi-k2.6|skateboard",
+  "sha1_colour": "8a509c479f6ed83ed26158acfb3532c798197f6d"
+ },
+ {
+  "file": "objects-41.svg",
+  "model": "objects",
+  "label": "skateboard",
+  "source": "claude-fable-5",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5|skateboard",
+  "sha1_colour": "8c07f9a75143fec83fcf1ce2f425dcc9be9c548a"
+ },
+ {
+  "file": "objects-42.svg",
+  "model": "objects",
+  "label": "sword",
+  "source": "deepseek-v4-pro",
+  "recipe": "rapidata",
+  "item_id": "rapidata:deepseek-v4-pro|sword",
+  "sha1_colour": "123a3818524e9856c94f287e54caa321e41a282f"
+ },
+ {
+  "file": "objects-43.svg",
+  "model": "objects",
+  "label": "sword",
+  "source": "claude-fable-5",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5|sword",
+  "sha1_colour": "616e4fd99f93c71be4be34ab0649b984d8b2d450"
+ },
+ {
+  "file": "objects-44.svg",
+  "model": "objects",
+  "label": "wave",
+  "source": "claude-fable-5-thinking",
+  "recipe": "rapidata",
+  "item_id": "rapidata:claude-fable-5-thinking|wave",
+  "sha1_colour": "48fb143bf84202b0ae74dfe14a983f8139d18dbc"
+ },
+ {
+  "file": "objects-45.svg",
+  "model": "objects",
+  "label": "wave",
+  "source": "quiver-arrow-1.1",
+  "recipe": "rapidata",
+  "item_id": "rapidata:quiver-arrow-1.1|wave",
+  "sha1_colour": "ca08b1192e9ab1ca48feffad9fa278af1a9fb261"
+ },
+ {
+  "file": "emoji-00.svg",
+  "model": "emoji",
+  "label": "animal-mammal",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1FACF",
+  "sha1_colour": "10f1da0579f03e114462f9be52ef0d91cb56ebaa"
+ },
+ {
+  "file": "emoji-01.svg",
+  "model": "emoji",
+  "label": "animal-mammal",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:1F435",
+  "sha1_colour": "9c3fe4b53cd80f6133482730f99740400825e93e"
+ },
+ {
+  "file": "emoji-02.svg",
+  "model": "emoji",
+  "label": "animal-mammal",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:1F415-200D-1F9BA",
+  "sha1_colour": "cee47385eec2a7c6d48bca33b65663ccd4c95074"
+ },
+ {
+  "file": "emoji-03.svg",
+  "model": "emoji",
+  "label": "animal-bird",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:1F989",
+  "sha1_colour": "9ee542654c9abd6db9f82b48db6cf2550ab042ba"
+ },
+ {
+  "file": "emoji-04.svg",
+  "model": "emoji",
+  "label": "animal-bird",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1F9A2",
+  "sha1_colour": "a0f1ea2e58cae4e4b224622a405b62b38283a078"
+ },
+ {
+  "file": "emoji-05.svg",
+  "model": "emoji",
+  "label": "animal-bird",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F426-200D-1F525",
+  "sha1_colour": "47d5d567cdbcbe68b83682126e34555f6b335fb8"
+ },
+ {
+  "file": "emoji-06.svg",
+  "model": "emoji",
+  "label": "food-fruit",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:1F34C",
+  "sha1_colour": "afd701f794d51348b5821c8edd48c4ea0759ccec"
+ },
+ {
+  "file": "emoji-07.svg",
+  "model": "emoji",
+  "label": "food-fruit",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F348",
+  "sha1_colour": "45a26d1873881c817bd4ffe2fa4bb02423093a6c"
+ },
+ {
+  "file": "emoji-08.svg",
+  "model": "emoji",
+  "label": "food-fruit",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1F34C",
+  "sha1_colour": "d99c034971e1a8b0cf9bec5018d1f67c514bcb66"
+ },
+ {
+  "file": "emoji-09.svg",
+  "model": "emoji",
+  "label": "food-prepared",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1FAD5",
+  "sha1_colour": "042ed0bfb915aecaf897e9fae5955f22a3869627"
+ },
+ {
+  "file": "emoji-10.svg",
+  "model": "emoji",
+  "label": "food-prepared",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F959",
+  "sha1_colour": "225d632098cc78b189ce9fd3f0c6c36a281a69e6"
+ },
+ {
+  "file": "emoji-11.svg",
+  "model": "emoji",
+  "label": "food-prepared",
+  "source": "openmoji",
+  "recipe": "clean",
+  "item_id": "openmoji:1F9C2",
+  "sha1_colour": "ef2bd7d07baa6493d1f9e604688c3629f92c5f40"
+ },
+ {
+  "file": "emoji-12.svg",
+  "model": "emoji",
+  "label": "drink",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:1F377",
+  "sha1_colour": "d0f26706189bd2d5b3f990cbf2c6eb36ea2d9b22"
+ },
+ {
+  "file": "emoji-13.svg",
+  "model": "emoji",
+  "label": "drink",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:1F9CB",
+  "sha1_colour": "3251173e4ff22e2945e92b5c332344abd9b0e4cd"
+ },
+ {
+  "file": "emoji-14.svg",
+  "model": "emoji",
+  "label": "drink",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F9CA",
+  "sha1_colour": "066cd9a4583b06986478a0d26291362fc424077b"
+ },
+ {
+  "file": "emoji-15.svg",
+  "model": "emoji",
+  "label": "transport-ground",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:1F68D",
+  "sha1_colour": "020eb79e5e3e2d07c45f459a1f90fc2a8278170d"
+ },
+ {
+  "file": "emoji-16.svg",
+  "model": "emoji",
+  "label": "transport-ground",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F3CD",
+  "sha1_colour": "e0b857e8146ae5e8c265432ef16c6e9726170480"
+ },
+ {
+  "file": "emoji-17.svg",
+  "model": "emoji",
+  "label": "transport-ground",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:1F6A6",
+  "sha1_colour": "c13aa100f0cf4ad3bf47e1dc423fbe21cb68e611"
+ },
+ {
+  "file": "emoji-18.svg",
+  "model": "emoji",
+  "label": "sky-weather",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F308",
+  "sha1_colour": "533997aac126d004430b9e54d7b2318f8f731fc2"
+ },
+ {
+  "file": "emoji-19.svg",
+  "model": "emoji",
+  "label": "sky-weather",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1FA90",
+  "sha1_colour": "4e567791518a1440fef159e975b63661eb4ac20c"
+ },
+ {
+  "file": "emoji-20.svg",
+  "model": "emoji",
+  "label": "sky-weather",
+  "source": "openmoji",
+  "recipe": "clean",
+  "item_id": "openmoji:1F30C",
+  "sha1_colour": "45a85dded044bd248c61cd5884ec78a94901ed07"
+ },
+ {
+  "file": "emoji-21.svg",
+  "model": "emoji",
+  "label": "place-building",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F3E1",
+  "sha1_colour": "a7e54cbbab8d09ec40311b568079fb48decc53b2"
+ },
+ {
+  "file": "emoji-22.svg",
+  "model": "emoji",
+  "label": "place-building",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:1F9F1",
+  "sha1_colour": "2b46471c1641d39aeba7c6c5aa91343575ca60b5"
+ },
+ {
+  "file": "emoji-23.svg",
+  "model": "emoji",
+  "label": "place-building",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1F3E2",
+  "sha1_colour": "62945ede8a086a82a3713482485345bc000cd86a"
+ },
+ {
+  "file": "emoji-24.svg",
+  "model": "emoji",
+  "label": "clothing",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F45C",
+  "sha1_colour": "3ec726c9fbc016a2274d7ed9bd7e17842bc16934"
+ },
+ {
+  "file": "emoji-25.svg",
+  "model": "emoji",
+  "label": "clothing",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1F484",
+  "sha1_colour": "8b582f17733ef060696fdf656b12c28191bff5c4"
+ },
+ {
+  "file": "emoji-26.svg",
+  "model": "emoji",
+  "label": "clothing",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:1F97E",
+  "sha1_colour": "e745d9557fe6f3ea36930dc885fbaa8f26f7204c"
+ },
+ {
+  "file": "emoji-27.svg",
+  "model": "emoji",
+  "label": "tool",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:2692",
+  "sha1_colour": "2bc182a18360f5e96911626b49d2bfb50b6e4758"
+ },
+ {
+  "file": "emoji-28.svg",
+  "model": "emoji",
+  "label": "tool",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:2692",
+  "sha1_colour": "f6655e6c2cdd3a3baf61391b9b9f2774a97608d9"
+ },
+ {
+  "file": "emoji-29.svg",
+  "model": "emoji",
+  "label": "tool",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:2696",
+  "sha1_colour": "8171b0abb0a7bbcdcffb07c8aef7e54630a6e803"
+ },
+ {
+  "file": "emoji-30.svg",
+  "model": "emoji",
+  "label": "household",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F6CB",
+  "sha1_colour": "f0704b63e02b12cb24688bfcb57ca06fa13902b8"
+ },
+ {
+  "file": "emoji-31.svg",
+  "model": "emoji",
+  "label": "household",
+  "source": "twemoji",
+  "recipe": "clean",
+  "item_id": "twemoji:1F9FA",
+  "sha1_colour": "00251d95404b2657b4e04e9b7cc7326dc470842d"
+ },
+ {
+  "file": "emoji-32.svg",
+  "model": "emoji",
+  "label": "household",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:1F9EF",
+  "sha1_colour": "516b719b0d0ec99d9ac19ff99eba3af129fff55d"
+ },
+ {
+  "file": "emoji-33.svg",
+  "model": "emoji",
+  "label": "sport",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F3C0",
+  "sha1_colour": "be47319679592edd6e8a54cfccc3125db4ef438e"
+ },
+ {
+  "file": "emoji-34.svg",
+  "model": "emoji",
+  "label": "sport",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:1F3BD",
+  "sha1_colour": "d953b431a459f3022505e706ebaa95ac81ed2f69"
+ },
+ {
+  "file": "emoji-35.svg",
+  "model": "emoji",
+  "label": "sport",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1F3D1",
+  "sha1_colour": "890fc0c8e903affa1f58e9a11e8f82f75914ba0a"
+ },
+ {
+  "file": "emoji-36.svg",
+  "model": "emoji",
+  "label": "time",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:1F554",
+  "sha1_colour": "1a96bed55d2ca356b037ba58422c7c7a341beac0"
+ },
+ {
+  "file": "emoji-37.svg",
+  "model": "emoji",
+  "label": "time",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:1F563",
+  "sha1_colour": "5152f3f4fa2e333ef5c793b13450db78a1680ca2"
+ },
+ {
+  "file": "emoji-38.svg",
+  "model": "emoji",
+  "label": "time",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:1F560",
+  "sha1_colour": "ed3f852fe98515d8de4205aaf01182abd2fc5b2d"
+ },
+ {
+  "file": "emoji-39.svg",
+  "model": "emoji",
+  "label": "geometric",
+  "source": "openmoji",
+  "recipe": "compact",
+  "item_id": "openmoji:25FB",
+  "sha1_colour": "66df721ee8ec14ae60072a49b8da5dfd54259343"
+ },
+ {
+  "file": "emoji-40.svg",
+  "model": "emoji",
+  "label": "geometric",
+  "source": "fluent",
+  "recipe": "clean",
+  "item_id": "fluent:26AA",
+  "sha1_colour": "a6763b5c083bf6feb9cdae08aaedbd2e96ce5dec"
+ },
+ {
+  "file": "emoji-41.svg",
+  "model": "emoji",
+  "label": "geometric",
+  "source": "noto",
+  "recipe": "noto",
+  "item_id": "noto:25FB",
+  "sha1_colour": "b6e04cb2f06680f15a3edc26d2494e57385be57a"
+ }
+]

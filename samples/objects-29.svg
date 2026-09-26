@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="100%" height="100%">
+  <defs>
+    <!-- Drop Shadow for the newspaper -->
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+    
+    <!-- Subtle gradient for the paper -->
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#FDFCF8" />
+    </linearGradient>
+
+    <!-- Pattern for text lines (optional, but used for simplicity) -->
+    <pattern id="text-lines" width="100" height="16" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="8" x2="100" y2="8" stroke="#ddd" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background (Desk/Table) -->
+  <rect width="800" height="1100" fill="#E8E4D9" />
+
+  <!-- The Newspaper -->
+  <rect x="40" y="40" width="720" height="1020" fill="url(#paperGrad)" filter="url(#shadow)" rx="2" />
+
+  <!-- Newspaper Header -->
+  <g id="masthead">
+    <text x="400" y="110" font-family="'Times New Roman', Times, serif" font-size="52" font-weight="bold" text-anchor="middle" fill="#1a1a1a">THE DAILY CHRONICLE</text>
+    <line x1="60" y1="135" x2="740" y2="135" stroke="#1a1a1a" stroke-width="3" />
+    <text x="400" y="160" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#555">VOL. CXLVIII No. 87 ... MONDAY, OCTOBER 14, 2024 ... PRICE $2.00</text>
+    <line x1="60" y1="175" x2="740" y2="175" stroke="#1a1a1a" stroke-width="1" />
+    <line x1="60" y1="179" x2="740" y2="179" stroke="#1a1a1a" stroke-width="1" />
+  </g>
+
+  <!-- Main Story (Left Block) -->
+  <g id="main-story">
+    <!-- Headline -->
+    <text x="60" y="230" font-family="'Times New Roman', Times, serif" font-size="42" font-weight="bold" fill="#111">GLOBAL TECH SUMMIT</text>
+    <text x="60" y="280" font-family="'Times New Roman', Times, serif" font-size="36" font-weight="bold" fill="#111">SPARKS NEW AI ERA</text>
+    <line x1="60" y1="300" x2="440" y2="300" stroke="#b00" stroke-width="5" />
+    <text x="60" y="330" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#333">Leaders gather to discuss ethics, innovation, and the future of work</text>
+
+    <!-- Main Image -->
+    <rect x="60" y="350" width="380" height="220" fill="#e8e8e8" stroke="#bbb" />
+    <path d="M60 570 L140 480 L220 540 L300 460 L440 520" stroke="#888" stroke-width="3" fill="none" />
+    <circle cx="120" cy="440" r="35" fill="#ccc" />
+    <rect x="220" y="420" width="100" height="50" fill="#ccc" />
+    <text x="250" y="540" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#888" text-anchor="middle">[ASSOCIATED PRESS PHOTO]</text>
+
+    <!-- Text Column 1 -->
+    <text x="60" y="610" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#222">
+      <tspan x="60" dy="0">The annual Global Tech Summit kicked off today</tspan>
+      <tspan x="60" dy="18">in San Francisco, drawing thousands of attendees</tspan>
+      <tspan x="60" dy="18">from around the world. The focus of this year's</tspan>
+      <tspan x="60" dy="18">conference is the rapid advancement of Artificial</tspan>
+      <tspan x="60" dy="18">Intelligence and its implications for global</tspan>
+      <tspan x="60" dy="18">economies, labor markets, and ethical governance.</tspan>
+      <tspan x="60" dy="18">Keynote speakers include CEOs from major tech</tspan>
+      <tspan x="60" dy="18">firms, policymakers, and leading academics.</tspan>
+      <tspan x="60" dy="18">"We must act now to ensure AI benefits all of</tspan>
+      <tspan x="60" dy="18">humanity," stated Dr. Elena Rossi, a leading</tspan>
+      <tspan x="60" dy="18">ethicist and board member of the AI Now</tspan>
+      <tspan x="60" dy="18">Institute. "The time for voluntary guidelines</tspan>
+      <tspan x="60" dy="18">is over; we need robust international treaties."</tspan>
+      <tspan x="60" dy="18">The summit continues through Friday.</tspan>
+    </text>
+
+    <!-- Text Column 2 -->
+    <text x="440" y="610" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#222">
+      <tspan x="440" dy="0">Early discussions have highlighted a growing</tspan>
+      <tspan x="440" dy="18">divide between tech optimists, who herald AI</tspan>
+      <tspan x="440" dy="18">as a tool for unprecedented growth, and critics</tspan>
+      <tspan x="440" dy="18">who warn of job displacement and algorithmic</tspan>
+      <tspan x="440" dy="18">bias. Protests are expected to take place</tspan>
+      <tspan x="440" dy="18">outside the convention center later today.</tspan>
+      <tspan x="440" dy="18">"We cannot let corporate interests dictate</tspan>
+      <tspan x="440" dy="18">the trajectory of a technology that will</tspan>
+      <tspan x="440" dy="18">affect every single person on this planet,"</tspan>
+      <tspan x="440" dy="18">said Marcus Chen, a labor organizer.</tspan>
+      <tspan x="440" dy="18">Meanwhile, tech stocks saw mixed results</tspan>
+      <tspan x="440" dy="18">as investors weighed the potential impact</tspan>
+      <tspan x="440" dy="18">of new regulations proposed by the EU.</tspan>
+    </text>
+  </g>
+
+  <!-- Sidebar (Right Block) -->
+  <g id="sidebar">
+    <rect x="460" y="220" width="220" height="2" fill="#111" />
+    <text x="460" y="250" font-family="'Times New Roman', Times, serif" font-size="28" font-weight="bold" fill="#111">OPINION</text>
+    <line x1="460" y1="265" x2="680" y2="265" stroke="#111" stroke-width="1" />
+    
+    <!-- Opinion Article 1 -->
+    <text x="460" y="295" font-family="'Times New Roman', Times, serif" font-size="20" font-weight="bold" fill="#111">The AI Revolution</text>
+    <text x="460" y="320" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555">By John Doe</text>
+    <text x="460" y="345" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#222">
+      <tspan x="460" dy="0">We stand at a precipice.</tspan>
+      <tspan x="460" dy="16">Artificial Intelligence is</tspan>
+      <tspan x="460" dy="16">no longer a futuristic</tspan>
+      <tspan x="460" dy="16">concept, but a present</tspan>
+      <tspan x="460" dy="16">reality reshaping every</tspan>
+      <tspan x="460" dy="16">facet of our lives.</tspan>
+      <tspan x="460" dy="16">Policymakers must act</tspan>
+      <tspan x="460" dy="16">with urgency to harness</tspan>
+      <tspan x="460" dy="16">its potential while</tspan>
+      <tspan x="460" dy="16">mitigating its risks.</tspan>
+      <tspan x="460" dy="16">The future is not set</tspan>
+      <tspan x="460" dy="16">in stone. We have the</tspan>
+      <tspan x="460" dy="16">power to shape it.</tspan>
+    </text>
+
+    <line x1="460" y1="530" x2="680" y2="530" stroke="#ccc" stroke-width="1" />
+    
+    <!-- Opinion Article 2 -->
+    <text x="460" y="555" font-family="'Times New Roman', Times, serif" font-size="18" font-weight="bold" fill="#111">Letters to the Editor</text>
+    <text x="460" y="580" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#222">
+      <tspan x="460" dy="0">Our readers weigh in on</tspan>
+      <tspan x="460" dy="16">the city's new housing</tspan>
+      <tspan x="460" dy="16">initiative and the recent</tspan>
+      <tspan x="460" dy="16">school board decisions.</tspan>
+      <tspan x="460" dy="16">"We need more affordable</tspan>
+      <tspan x="460" dy="16">units now," writes one</tspan>
+      <tspan x="460" dy="16">concerned resident.</tspan>
+      <tspan x="460" dy="16">"The time for talk is</tspan>
+      <tspan x="460" dy="16">over. We need action."</tspan>
+      <tspan x="460" dy="16">Another reader praises</tspan>
+      <tspan x="460" dy="16">the new STEM programs</tspan>
+      <tspan x="460" dy="16">in local high schools.</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom Section (More News) -->
+  <g id="bottom-stories">
+    <!-- Divider -->
+    <line x1="60" y1="760" x2="740" y2="760" stroke="#111" stroke-width="2" />
+
+    <!-- Story 1: Sports -->
+    <text x="60" y="790" font-family="'Times New Roman', Times, serif" font-size="20" font-weight="bold" fill="#111">SPORTS</text>
+    <rect x="60" y="805" width="226" height="120" fill="#e8e8e8" stroke="#bbb" />
+    <circle cx="170" cy="865" r="30" fill="#ccc" />
+    <rect x="100" y="835" width="60" height="40" fill="#ccc" />
+    <text x="170" y="895" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#888" text-anchor="middle">[PHOTO]</text>
+    <text x="60" y="945" font-family="'Times New Roman', Times, serif" font-size="16" font-weight="bold" fill="#111">Local Team Clinches</text>
+    <text x="60" y="965" font-family="'Times New Roman', Times, serif" font-size="16" font-weight="bold" fill="#111">Championship Title</text>
+    <text x="60" y="985" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">In a thrilling game that went</text>
+    <text x="60" y="1000" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">into overtime, the hometown</text>
+    <text x="60" y="1015" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">heroes secured a 3-2 victory...</text>
+
+    <!-- Story 2: Business -->
+    <text x="287" y="790" font-family="'Times New Roman', Times, serif" font-size="20" font-weight="bold" fill="#111">BUSINESS</text>
+    <rect x="287" y="805" width="226" height="120" fill="#e8e8e8" stroke="#bbb" />
+    <path d="M287 895 L320 855 L350 885 L380 835 L410 905 L440 845 L470 875 L513 825" stroke="#4a4" stroke-width="4" fill="none" />
+    <text x="400" y="895" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#888" text-anchor="middle">[MARKET CHART]</text>
+    <text x="287" y="945" font-family="'Times New Roman', Times, serif" font-size="16" font-weight="bold" fill="#111">Markets Hit Record</text>
+    <text x="287" y="965" font-family="'Times New Roman', Times, serif" font-size="16" font-weight="bold" fill="#111">Highs Amid Optimism</text>
+    <text x="287" y="985" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">The S&P 500 surged on</text>
+    <text x="287" y="1000" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">Friday, closing at an all-</text>
+    <text x="287" y="1015" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">time high as investors...</text>
+
+    <!-- Story 3: Weather -->
+    <text x="514" y="790" font-family="'Times New Roman', Times, serif" font-size="20" font-weight="bold" fill="#111">WEATHER</text>
+    <rect x="514" y="805" width="226" height="120" fill="#e8e8e8" stroke="#bbb" />
+    <text x="627" y="880" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold" fill="#333" text-anchor="middle">72°F</text>
+    <text x="627" y="905" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#555" text-anchor="middle">Sunny</text>
+    <text x="514" y="945" font-family="'Times New Roman', Times, serif" font-size="16" font-weight="bold" fill="#111">Forecast: Sunny Week</text>
+    <text x="514" y="965" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">A beautiful week ahead</text>
+    <text x="514" y="980" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">with temperatures expected</text>
+    <text x="514" y="995" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#222">to reach the mid-80s.</text>
+  </g>
+
+  <!-- Footer -->
+  <g id="footer">
+    <line x1="60" y1="1045" x2="740" y2="1045" stroke="#111" stroke-width="2" />
+    <text x="400" y="1068" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111">Continue reading on Page A2</text>
+    <text x="400" y="1088" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#555">© 2024 The Daily Chronicle. All rights reserved. | dailychronicle.com</text>
+  </g>
+
+</svg>

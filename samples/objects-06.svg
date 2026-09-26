@@ -1,0 +1,93 @@
+<svg id="coffeeScene" viewBox="0 0 800 600" class="w-full h-full max-w-[1200px] max-h-[900px] drop-shadow-2xl">
+            <defs>
+                <!-- Gradients -->
+                <radialGradient id="grad-ceramic" cx="30%" cy="30%" r="70%">
+                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#e5e7eb;stop-opacity:1" />
+                </radialGradient>
+                <radialGradient id="grad-coffee" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" style="stop-color:#4a3b32;stop-opacity:1" />
+                    <stop offset="90%" style="stop-color:#231712;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#140e0b;stop-opacity:1" />
+                </radialGradient>
+                <linearGradient id="grad-bean" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#6F4E37;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#4B3621;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#3B2514;stop-opacity:1" />
+                </linearGradient>
+                <filter id="blur-steam" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="4" />
+                </filter>
+                <filter id="noise-foam">
+                     <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+                     <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0"/>
+                     <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+                     <feBlend in="SourceGraphic" in2="monoNoise" mode="soft-light" />
+                </filter>
+            </defs>
+
+            <!-- Group: Table Surface (Implicit via CSS) -->
+
+            <!-- Group: Saucer -->
+            <g id="saucer" transform="translate(400, 350)">
+                <ellipse cx="0" cy="0" rx="140" ry="50" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+                <ellipse cx="0" cy="0" rx="120" ry="40" fill="#e5e7eb" />
+                <!-- Shadow -->
+                <ellipse cx="10" cy="10" rx="130" ry="45" fill="rgba(0,0,0,0.1)" transform="translate(5, 5)" style="mix-blend-mode: multiply;" pointer-events="none"/>
+            </g>
+
+            <!-- Group: Main Cup -->
+            <g id="cupGroup" transform="translate(400, 350)">
+                <!-- Cup Handle (Back part) -->
+                <path d="M 90 -10 C 130 -30, 130 30, 90 20" stroke="#e5e7eb" stroke-width="18" fill="none" stroke-linecap="round"/>
+
+                <!-- Cup Body -->
+                <!-- Bottom rounded cylinder shape -->
+                <path d="M -90 -60 L -90 10 C -90 50, 90 50, 90 10 L 90 -60 Z" fill="url(#grad-ceramic)" stroke="#cbd5e1" stroke-width="1"/>
+                
+                <!-- Cup Top Rim Outer -->
+                <ellipse cx="0" cy="-60" rx="90" ry="30" fill="#f9fafb" stroke="#e5e7eb" stroke-width="2"/>
+
+                <!-- Liquid (Coffee) -->
+                <!-- Masking group for liquid depth -->
+                <g id="liquidContainer">
+                    <!-- The Coffee Surface (Dark) -->
+                    <ellipse cx="0" cy="-60" rx="82" ry="24" fill="url(#grad-coffee)" />
+                    
+                    <!-- The Crema / Milk Layer (Latte Art Base) -->
+                    <ellipse id="foamLayer" cx="0" cy="-62" rx="80" ry="22" fill="#D2B48C" opacity="0.9" filter="url(#noise-foam)"/>
+                    
+                    <!-- Latte Art Group (Clipping to cup might be complex, simple overlay for now) -->
+                    <g id="latteArt" transform="translate(0, -62) scale(1, 0.4)" style="transform-origin: center;">
+                        <!-- Paths populated by JS -->
+                    </g>
+                </g>
+
+                <!-- Cup Handle (Front connector) -->
+                 <path d="M 82 -40 C 100 -40, 125 -20, 125 0 C 125 20, 100 40, 82 40" stroke="url(#grad-ceramic)" stroke-width="14" fill="none" transform="translate(-5,0)"/>
+
+                <!-- Highlights -->
+                <path d="M -80 -50 Q -80 -10 -60 30" stroke="white" stroke-width="3" fill="none" opacity="0.3" stroke-linecap="round"/>
+            </g>
+
+            <!-- Group: Steam -->
+            <g id="steamGroup" transform="translate(400, 280)" opacity="0.6" filter="url(#blur-steam)"></g>
+
+            <!-- Group: Scattered Beans -->
+            <g id="beansGroup"></g>
+
+            <!-- Foreground Card/Menu -->
+            <g id="menuCard" transform="translate(150, 400) rotate(-5)" class="cursor-pointer draggable">
+                <rect x="0" y="0" width="160" height="200" rx="5" fill="#fff" stroke="#ddd" stroke-width="1" shadow="true"/>
+                <rect x="10" y="10" width="140" height="180" fill="none" stroke="#A0522D" stroke-dasharray="2,2"/>
+                <text x="80" y="40" text-anchor="middle" font-family="Playfair Display" font-size="18" fill="#4a3b32" font-weight="bold">ESPRESSO</text>
+                <line x1="30" y1="50" x2="130" y2="50" stroke="#A0522D" stroke-width="1" />
+                <text x="80" y="80" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">SINGLE ORIGIN</text>
+                <text x="80" y="100" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">ETHIOPIAN</text>
+                <circle cx="80" cy="140" r="20" fill="none" stroke="#A0522D" stroke-width="2" />
+                <text x="80" y="175" text-anchor="middle" font-family="Lato" font-size="12" fill="#888">12oz - $4.50</text>
+            </g>
+
+            <!-- Interactive Toast Message -->
+            <text id="toast" x="400" y="550" text-anchor="middle" font-family="Lato" font-size="14" fill="#5D4037" opacity="0" style="transition: opacity 0.5s">Order Received!</text>
+        </svg>

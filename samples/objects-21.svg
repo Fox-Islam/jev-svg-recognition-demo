@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#FFF4D6" rx="20"/>
+  
+  <!-- Sun glow behind -->
+  <circle cx="200" cy="210" r="160" fill="#FFE29A" opacity="0.6"/>
+  
+  <!-- Mane - outer ring of fur tufts -->
+  <g fill="#B5510F">
+    <ellipse cx="200" cy="210" rx="145" ry="140"/>
+  </g>
+  
+  <!-- Mane tufts (radiating) -->
+  <g fill="#D97014">
+    <ellipse cx="200" cy="75" rx="30" ry="40"/>
+    <ellipse cx="150" cy="85" rx="30" ry="40" transform="rotate(-25 150 85)"/>
+    <ellipse cx="250" cy="85" rx="30" ry="40" transform="rotate(25 250 85)"/>
+    <ellipse cx="105" cy="115" rx="30" ry="40" transform="rotate(-50 105 115)"/>
+    <ellipse cx="295" cy="115" rx="30" ry="40" transform="rotate(50 295 115)"/>
+    <ellipse cx="80" cy="165" rx="30" ry="40" transform="rotate(-75 80 165)"/>
+    <ellipse cx="320" cy="165" rx="30" ry="40" transform="rotate(75 320 165)"/>
+    <ellipse cx="75" cy="220" rx="30" ry="40" transform="rotate(-95 75 220)"/>
+    <ellipse cx="325" cy="220" rx="30" ry="40" transform="rotate(95 325 220)"/>
+    <ellipse cx="90" cy="275" rx="30" ry="40" transform="rotate(-120 90 275)"/>
+    <ellipse cx="310" cy="275" rx="30" ry="40" transform="rotate(120 310 275)"/>
+    <ellipse cx="130" cy="325" rx="30" ry="35" transform="rotate(-150 130 325)"/>
+    <ellipse cx="270" cy="325" rx="30" ry="35" transform="rotate(150 270 325)"/>
+    <ellipse cx="200" cy="345" rx="30" ry="35"/>
+  </g>
+  
+  <!-- Mane inner ring -->
+  <circle cx="200" cy="215" r="115" fill="#C46415"/>
+  
+  <!-- Ears -->
+  <g>
+    <ellipse cx="140" cy="140" rx="25" ry="20" fill="#C87426" transform="rotate(-20 140 140)"/>
+    <ellipse cx="140" cy="140" rx="14" ry="10" fill="#8B4513" transform="rotate(-20 140 140)"/>
+    <ellipse cx="260" cy="140" rx="25" ry="20" fill="#C87426" transform="rotate(20 260 140)"/>
+    <ellipse cx="260" cy="140" rx="14" ry="10" fill="#8B4513" transform="rotate(20 260 140)"/>
+  </g>
+  
+  <!-- Head -->
+  <ellipse cx="200" cy="220" rx="95" ry="100" fill="#F5C16C"/>
+  
+  <!-- Face highlight -->
+  <ellipse cx="200" cy="215" rx="85" ry="88" fill="#FBDCA0"/>
+  
+  <!-- Eyes whites -->
+  <ellipse cx="165" cy="195" rx="15" ry="17" fill="white"/>
+  <ellipse cx="235" cy="195" rx="15" ry="17" fill="white"/>
+  
+  <!-- Pupils -->
+  <circle cx="167" cy="197" r="9" fill="#4A2810"/>
+  <circle cx="237" cy="197" r="9" fill="#4A2810"/>
+  
+  <!-- Eye shine -->
+  <circle cx="170" cy="194" r="3" fill="white"/>
+  <circle cx="240" cy="194" r="3" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 145 178 Q 165 170 185 178" stroke="#6B3410" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 215 178 Q 235 170 255 178" stroke="#6B3410" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Muzzle area -->
+  <ellipse cx="200" cy="260" rx="55" ry="45" fill="#FFE8BA"/>
+  
+  <!-- Nose -->
+  <path d="M 180 240 Q 200 232 220 240 Q 222 252 200 260 Q 178 252 180 240 Z" fill="#3D1F0A"/>
+  
+  <!-- Nose highlight -->
+  <ellipse cx="193" cy="242" rx="4" ry="2.5" fill="#6B3410" opacity="0.6"/>
+  
+  <!-- Mouth -->
+  <path d="M 200 260 L 200 278" stroke="#3D1F0A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 200 278 Q 185 290 175 283" stroke="#3D1F0A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 200 278 Q 215 290 225 283" stroke="#3D1F0A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Whisker dots -->
+  <g fill="#6B3410">
+    <circle cx="155" cy="265" r="2"/>
+    <circle cx="150" cy="272" r="2"/>
+    <circle cx="155" cy="279" r="2"/>
+    <circle cx="245" cy="265" r="2"/>
+    <circle cx="250" cy="272" r="2"/>
+    <circle cx="245" cy="279" r="2"/>
+  </g>
+  
+  <!-- Whiskers -->
+  <g stroke="#3D1F0A" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M 155 268 Q 130 265 110 268"/>
+    <path d="M 155 275 Q 130 275 110 278"/>
+    <path d="M 155 282 Q 130 285 112 290"/>
+    <path d="M 245 268 Q 270 265 290 268"/>
+    <path d="M 245 275 Q 270 275 290 278"/>
+    <path d="M 245 282 Q 270 285 288 290"/>
+  </g>
+  
+  <!-- Chin tuft -->
+  <ellipse cx="200" cy="305" rx="35" ry="18" fill="#FFE8BA"/>
+  
+  <!-- Small chest tuft below -->
+  <path d="M 160 320 Q 200 345 240 320 Q 220 340 200 340 Q 180 340 160 320 Z" fill="#F5C16C"/>
+</svg>

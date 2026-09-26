@@ -1,0 +1,64 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Jellyfish Icon</title>
+  <desc id="desc">A cute purple jellyfish with a rounded bell, face, and flowing tentacles.</desc>
+
+  <defs>
+    <linearGradient id="bellGradient" x1="256" y1="72" x2="256" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B8F1FF"/>
+      <stop offset="0.55" stop-color="#9D8CFF"/>
+      <stop offset="1" stop-color="#7C4DFF"/>
+    </linearGradient>
+
+    <linearGradient id="tentacleGradient" x1="256" y1="292" x2="256" y2="482" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C4DFF"/>
+      <stop offset="1" stop-color="#FF7AD9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bell -->
+  <path
+    d="M104 246C104 148 172 72 256 72C340 72 408 148 408 246C408 272 386 294 360 294C342 294 330 278 320 258C310 278 298 294 280 294C262 294 250 278 240 258C230 278 218 294 200 294C182 294 170 278 160 258C150 278 138 294 120 294C111 294 104 287 104 278Z"
+    fill="url(#bellGradient)"
+    stroke="#4E35B1"
+    stroke-width="16"
+    stroke-linejoin="round"
+  />
+
+  <!-- Shine -->
+  <path
+    d="M159 213C171 150 214 113 267 106"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="18"
+    stroke-linecap="round"
+    opacity="0.45"
+  />
+
+  <!-- Face -->
+  <circle cx="214" cy="220" r="13" fill="#2D2463"/>
+  <circle cx="298" cy="220" r="13" fill="#2D2463"/>
+  <path
+    d="M232 249C246 263 266 263 280 249"
+    fill="none"
+    stroke="#2D2463"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+
+  <!-- Tentacles -->
+  <g fill="none" stroke="url(#tentacleGradient)" stroke-width="15" stroke-linecap="round">
+    <path d="M152 292C136 331 178 352 156 391C136 428 169 449 146 482"/>
+    <path d="M204 292C220 329 181 353 206 392C230 429 195 451 218 482"/>
+    <path d="M256 292C235 336 279 365 254 406C237 435 263 457 248 482"/>
+    <path d="M308 292C290 328 326 359 301 396C278 430 314 451 292 482"/>
+    <path d="M360 292C378 332 336 354 358 394C378 431 346 452 368 482"/>
+  </g>
+
+  <!-- Small inner tendrils -->
+  <g fill="none" stroke="#DFA7FF" stroke-width="8" stroke-linecap="round" opacity="0.9">
+    <path d="M181 302C190 335 162 356 176 389"/>
+    <path d="M235 302C222 336 246 360 230 396"/>
+    <path d="M281 302C296 338 270 361 288 398"/>
+    <path d="M333 302C321 333 350 359 334 392"/>
+  </g>
+</svg>

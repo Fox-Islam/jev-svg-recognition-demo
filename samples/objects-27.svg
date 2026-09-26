@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1633" />
+      <stop offset="100%" stop-color="#0B0917" />
+    </linearGradient>
+
+    <!-- Mic Capsule Gradient (Vibrant Pink to Orange) -->
+    <linearGradient id="micGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E93" />
+      <stop offset="100%" stop-color="#FF8A00" />
+    </linearGradient>
+
+    <!-- Mount/Stand Gradient (Cyan to Blue) -->
+    <linearGradient id="standGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+
+    <!-- Left Sound Waves Gradient -->
+    <linearGradient id="waveLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+
+    <!-- Right Sound Waves Gradient -->
+    <linearGradient id="waveRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E93" />
+      <stop offset="100%" stop-color="#FF8A00" />
+    </linearGradient>
+
+    <!-- Microphone Grill Mesh Pattern -->
+    <pattern id="mesh" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#120E1F" stroke-width="1.5" opacity="0.4" />
+      <line x1="0" y1="0" x2="6" y2="0" stroke="#120E1F" stroke-width="1.5" opacity="0.4" />
+    </pattern>
+
+    <!-- Capsule Clip Path for Shading -->
+    <clipPath id="micClip">
+      <rect x="96" y="44" width="64" height="104" rx="32" />
+    </clipPath>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Intense Glow Filter for LED Indicator -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Plate -->
+  <rect width="256" height="256" rx="56" fill="url(#bgGrad)" />
+  <!-- Inner Glassmorphic Border -->
+  <rect width="254" height="254" x="1" y="1" rx="55" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.08" />
+
+  <!-- Radiating Sound Waves Layer -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+    <!-- Left Waves (Cyan) -->
+    <g stroke="url(#waveLeft)">
+      <!-- Inner Left -->
+      <path d="M 68 84 Q 48 124 68 164" stroke-width="6" opacity="0.85" />
+      <!-- Outer Left -->
+      <path d="M 48 64 Q 24 124 48 184" stroke-width="6" opacity="0.45" />
+    </g>
+    <!-- Right Waves (Pink/Orange) -->
+    <g stroke="url(#waveRight)">
+      <!-- Inner Right -->
+      <path d="M 188 84 Q 208 124 188 164" stroke-width="6" opacity="0.85" />
+      <!-- Outer Right -->
+      <path d="M 208 64 Q 232 124 208 184" stroke-width="6" opacity="0.45" />
+    </g>
+  </g>
+
+  <!-- Microphone Stand and Mount -->
+  <g fill="none" stroke="url(#standGrad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- U-Bracket -->
+    <path d="M 86 116 L 86 136 A 42 42 0 0 0 170 136 L 170 116" />
+    <!-- Connector Pins (Bracket to Capsule) -->
+    <path d="M 86 116 L 96 116" />
+    <path d="M 160 116 L 170 116" />
+    <!-- Vertical Stand Stem -->
+    <path d="M 128 178 L 128 208" />
+    <!-- Base Plate -->
+    <path d="M 96 208 L 160 208" />
+  </g>
+
+  <!-- Microphone Capsule Core -->
+  <g id="microphone-capsule">
+    <!-- Underlay for glowing effect -->
+    <rect x="96" y="44" width="64" height="104" rx="32" fill="url(#micGrad)" filter="url(#softGlow)" opacity="0.6"/>
+
+    <!-- Precisely clipped capsule details -->
+    <g clip-path="url(#micClip)">
+      <!-- Gradient Base -->
+      <rect x="96" y="44" width="64" height="104" fill="url(#micGrad)" />
+      
+      <!-- Cylindrical Lighting / Left Side Highlight -->
+      <rect x="96" y="44" width="32" height="104" fill="#ffffff" opacity="0.15" />
+      
+      <!-- Grill Mesh Overlay -->
+      <rect x="96" y="44" width="64" height="104" fill="url(#mesh)" />
+
+      <!-- Horizontal Metal Bands -->
+      <rect x="96" y="88" width="64" height="12" fill="#120E1F" opacity="0.95" />
+      <rect x="96" y="104" width="64" height="4" fill="#120E1F" opacity="0.95" />
+      <rect x="96" y="128" width="64" height="8" fill="#120E1F" opacity="0.95" />
+
+      <!-- Band Highlights (Creates metallic reflection) -->
+      <rect x="96" y="88" width="64" height="2" fill="#ffffff" opacity="0.25" />
+      <rect x="96" y="104" width="64" height="1" fill="#ffffff" opacity="0.25" />
+      <rect x="96" y="128" width="64" height="1.5" fill="#ffffff" opacity="0.25" />
+    </g>
+  </g>
+
+  <!-- On-Air / Recording Indicator LED -->
+  <circle cx="128" cy="140" r="4" fill="#FF2E93" filter="url(#intenseGlow)" />
+  <circle cx="128" cy="140" r="2" fill="#ffffff" />
+</svg>

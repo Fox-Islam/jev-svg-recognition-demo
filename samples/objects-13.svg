@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Red-and-black-tailed guppy</title>
+  <defs>
+    <linearGradient id="bodyGradient" x1="140" y1="180" x2="545" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dff8ff"/>
+      <stop offset="0.35" stop-color="#8fe0ff"/>
+      <stop offset="0.7" stop-color="#f4f7c8"/>
+      <stop offset="1" stop-color="#f7b45d"/>
+    </linearGradient>
+
+    <radialGradient id="headGlow" cx="34%" cy="43%" r="55%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="0.65" stop-color="#9eeaff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#4fb6d8" stop-opacity="0.9"/>
+    </radialGradient>
+
+    <linearGradient id="tailRed" x1="515" y1="120" x2="760" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6b50"/>
+      <stop offset="0.45" stop-color="#e71919"/>
+      <stop offset="1" stop-color="#8b0000"/>
+    </linearGradient>
+
+    <linearGradient id="tailBlack" x1="530" y1="100" x2="765" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a1a1a"/>
+      <stop offset="0.5" stop-color="#030303"/>
+      <stop offset="1" stop-color="#3a0000"/>
+    </linearGradient>
+
+    <clipPath id="bodyClip">
+      <path d="M143 198
+               C190 118, 330 95, 468 142
+               C515 158, 548 181, 558 198
+               C535 226, 485 253, 415 267
+               C285 294, 185 267, 143 198Z"/>
+    </clipPath>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Soft shadow -->
+  <ellipse cx="405" cy="305" rx="300" ry="28" fill="#000" opacity="0.12"/>
+
+  <g filter="url(#softShadow)">
+    <!-- Tail outer black silhouette -->
+    <path d="M520 176
+             C610 78, 720 58, 765 108
+             C720 142, 705 174, 762 197
+             C705 219, 720 256, 765 292
+             C710 328, 607 301, 520 218
+             C542 206, 542 188, 520 176Z"
+          fill="url(#tailBlack)"/>
+
+    <!-- Tail red fan -->
+    <path d="M527 181
+             C612 105, 702 88, 742 121
+             C685 151, 680 180, 735 199
+             C682 218, 688 248, 742 279
+             C695 304, 608 281, 527 213
+             C543 202, 543 191, 527 181Z"
+          fill="url(#tailRed)"/>
+
+    <!-- Black tail markings -->
+    <path d="M581 140 C632 123, 691 121, 734 136
+             C682 149, 630 158, 577 178Z"
+          fill="#050505" opacity="0.88"/>
+    <path d="M574 220 C626 245, 678 265, 733 266
+             C687 289, 624 276, 575 239Z"
+          fill="#050505" opacity="0.88"/>
+    <path d="M642 161 C665 174, 688 183, 730 195
+             C690 202, 662 204, 629 195Z"
+          fill="#111" opacity="0.82"/>
+
+    <!-- Tail rays -->
+    <g stroke="#2b0000" stroke-width="3" stroke-linecap="round" opacity="0.5">
+      <path d="M535 194 C600 125, 682 102, 742 121"/>
+      <path d="M535 198 C620 171, 688 160, 757 196"/>
+      <path d="M535 203 C617 230, 685 252, 742 279"/>
+    </g>
+
+    <!-- Body -->
+    <path d="M143 198
+             C190 118, 330 95, 468 142
+             C515 158, 548 181, 558 198
+             C535 226, 485 253, 415 267
+             C285 294, 185 267, 143 198Z"
+          fill="url(#bodyGradient)"
+          stroke="#1d6f8a"
+          stroke-width="3"/>
+
+    <!-- Head glow -->
+    <path d="M143 198
+             C174 144, 235 120, 300 124
+             C275 157, 275 230, 306 263
+             C235 268, 176 247, 143 198Z"
+          fill="url(#headGlow)"
+          opacity="0.75"/>
+
+    <!-- Scales -->
+    <g clip-path="url(#bodyClip)" opacity="0.28" fill="none" stroke="#ffffff" stroke-width="1.8">
+      <path d="M235 135 C250 155,250 180,235 200 C250 220,250 245,235 265"/>
+      <path d="M275 125 C292 150,292 180,275 205 C292 228,292 250,275 275"/>
+      <path d="M315 123 C334 150,334 180,315 207 C334 230,334 250,315 275"/>
+      <path d="M355 128 C374 153,374 181,355 207 C374 230,374 250,355 270"/>
+      <path d="M395 137 C413 158,413 183,395 207 C413 228,413 245,395 262"/>
+      <path d="M435 150 C451 168,451 187,435 207 C451 224,451 238,435 252"/>
+      <path d="M475 164 C490 179,490 193,475 210 C490 222,490 232,475 242"/>
+    </g>
+
+    <!-- Dorsal fin -->
+    <path d="M345 124
+             C390 70, 448 84, 488 145
+             C438 132, 392 130, 345 124Z"
+          fill="#ff7f50"
+          opacity="0.78"
+          stroke="#9c1b1b"
+          stroke-width="2"/>
+
+    <path d="M365 122 C398 91, 438 101, 472 141"
+          fill="none"
+          stroke="#050505"
+          stroke-width="4"
+          opacity="0.45"/>
+
+    <!-- Lower fins -->
+    <path d="M315 258
+             C360 326, 430 312, 455 250
+             C405 270, 360 268, 315 258Z"
+          fill="#e92020"
+          opacity="0.72"
+          stroke="#2a0000"
+          stroke-width="2"/>
+
+    <path d="M235 255
+             C250 304, 305 310, 330 262
+             C292 270, 265 267, 235 255Z"
+          fill="#ff9a4a"
+          opacity="0.65"
+          stroke="#8b1a1a"
+          stroke-width="2"/>
+
+    <!-- Gill line -->
+    <path d="M242 144 C210 172, 210 224, 246 252"
+          fill="none"
+          stroke="#2f6f7d"
+          stroke-width="3"
+          opacity="0.65"/>
+
+    <!-- Eye -->
+    <circle cx="195" cy="178" r="17" fill="#ffffff"/>
+    <circle cx="199" cy="181" r="10" fill="#050505"/>
+    <circle cx="203" cy="176" r="3.5" fill="#ffffff"/>
+
+    <!-- Mouth -->
+    <path d="M142 197 C126 191, 119 199, 142 207"
+          fill="none"
+          stroke="#1b5260"
+          stroke-width="3"
+          stroke-linecap="round"/>
+
+    <!-- Body spots -->
+    <g opacity="0.75">
+      <circle cx="360" cy="166" r="7" fill="#111"/>
+      <circle cx="398" cy="218" r="5" fill="#111"/>
+      <circle cx="450" cy="184" r="6" fill="#111"/>
+      <circle cx="315" cy="224" r="4" fill="#111"/>
+      <circle cx="495" cy="204" r="5" fill="#111"/>
+      <circle cx="430" cy="238" r="3.5" fill="#111"/>
+    </g>
+
+    <!-- Highlights -->
+    <path d="M185 170
+             C260 122, 394 122, 505 172"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="6"
+          stroke-linecap="round"
+          opacity="0.45"/>
+
+    <path d="M230 223
+             C315 251, 430 242, 520 204"
+          fill="none"
+          stroke="#fff6b0"
+          stroke-width="4"
+          stroke-linecap="round"
+          opacity="0.35"/>
+  </g>
+</svg>

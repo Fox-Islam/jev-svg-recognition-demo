@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="200" height="400">
+  <defs>
+    <linearGradient id="bullet" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#a87055"/>
+      <stop offset="40%" stop-color="#d9a98a"/>
+      <stop offset="70%" stop-color="#c08c६f"/>
+      <stop offset="100%" stop-color="#8a5a44"/>
+    </linearGradient>
+    <linearGradient id="bulletGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#8a5a44"/>
+      <stop offset="40%" stop-color="#deb094"/>
+      <stop offset="60%" stop-color="#c89479"/>
+      <stop offset="100%" stop-color="#7a4a36"/>
+    </linearGradient>
+    <linearGradient id="caseGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#3a2a22"/>
+      <stop offset="20%" stop-color="#6b4a3a"/>
+      <stop offset="50%" stop-color="#9a7560"/>
+      <stop offset="80%" stop-color="#6b4a3a"/>
+      <stop offset="100%" stop-color="#2a1d16"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#f7e9a0"/>
+      <stop offset="100%" stop-color="#b8941f"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#b8941f"/>
+      <stop offset="50%" stop-color="#f7e9a0"/>
+      <stop offset="100%" stop-color="#9a7a18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shadow -->
+  <ellipse cx="100" cy="385" rx="60" ry="6" fill="#000" opacity="0.25"/>
+
+  <!-- lipstick bullet (angled tip) -->
+  <g>
+    <!-- back of bullet body -->
+    <path d="M 65 160 
+             L 65 60
+             Q 65 50 75 40
+             L 130 15
+             Q 135 13 135 20
+             L 135 160 Z" 
+          fill="url(#bulletGrad)" stroke="#5a3a2a" stroke-width="0.5"/>
+    <!-- angled top highlight -->
+    <path d="M 75 40 L 130 15 Q 135 13 135 20 L 90 42 Z" 
+          fill="#e8c2a4" opacity="0.7"/>
+    <!-- subtle highlight stripe -->
+    <rect x="85" y="50" width="6" height="105" fill="#f0d4ba" opacity="0.5"/>
+  </g>
+
+  <!-- gold ring under bullet -->
+  <rect x="60" y="158" width="80" height="14" fill="url(#ringGrad)" stroke="#8a6a14" stroke-width="0.5"/>
+  <rect x="60" y="158" width="80" height="3" fill="#fff3c4" opacity="0.6"/>
+
+  <!-- main case body -->
+  <rect x="55" y="172" width="90" height="180" fill="url(#caseGrad)" stroke="#1a0f08" stroke-width="1"/>
+  <!-- case highlight -->
+  <rect x="68" y="174" width="10" height="176" fill="#c89878" opacity="0.4"/>
+  <rect x="82" y="174" width="4" height="176" fill="#f0d4b8" opacity="0.5"/>
+
+  <!-- gold base ring -->
+  <rect x="55" y="346" width="90" height="10" fill="url(#ringGrad)" stroke="#8a6a14" stroke-width="0.5"/>
+
+  <!-- bottom base -->
+  <rect x="58" y="356" width="84" height="18" fill="url(#caseGrad)" stroke="#1a0f08" stroke-width="0.5"/>
+  <rect x="55" y="372" width="90" height="6" fill="url(#baseGrad)" stroke="#8a6a14" stroke-width="0.5"/>
+
+  <!-- brand label area -->
+  <text x="100" y="265" font-family="serif" font-size="10" fill="#f7e9a0" text-anchor="middle" letter-spacing="2" font-style="italic">NUDE</text>
+  <line x1="75" y1="275" x2="125" y2="275" stroke="#f7e9a0" stroke-width="0.5"/>
+</svg>

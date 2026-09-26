@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 300" width="100" height="300">
+
+  <!-- Lipstick Base/Bottom -->
+  <rect x="30" y="220" width="40" height="60" rx="3" ry="3"
+        fill="#c8a882" stroke="#a0785a" stroke-width="1.5"/>
+
+  <!-- Label band -->
+  <rect x="30" y="240" width="40" height="20"
+        fill="#b8926a" stroke="#a0785a" stroke-width="0.5"/>
+
+  <!-- Label text line decoration -->
+  <line x1="35" y1="250" x2="65" y2="250" stroke="#d4b896" stroke-width="1"/>
+
+  <!-- Lipstick Tube Middle -->
+  <rect x="32" y="160" width="36" height="65" rx="2" ry="2"
+        fill="#d4a882" stroke="#a0785a" stroke-width="1.5"/>
+
+  <!-- Tube shine -->
+  <rect x="36" y="163" width="6" height="58" rx="3"
+        fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Lipstick Bullet Holder -->
+  <rect x="34" y="140" width="32" height="25" rx="1"
+        fill="#c09070" stroke="#a0785a" stroke-width="1.5"/>
+
+  <!-- Lipstick Bullet (nude pink color) -->
+  <rect x="36" y="80" width="28" height="65" rx="2"
+        fill="#c68b7a" stroke="#b07060" stroke-width="1"/>
+
+  <!-- Bullet Top (angled cut) -->
+  <polygon points="36,80 64,80 64,50 50,35"
+           fill="#c8907f" stroke="#b07060" stroke-width="1"/>
+
+  <!-- Bullet shine highlight -->
+  <polygon points="38,80 44,80 44,55 38,70"
+            fill="rgba(255,255,255,0.25)"/>
+
+  <!-- Bullet tip shine -->
+  <line x1="52" y1="38" x2="62" y2="52"
+        stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+
+  <!-- Bottom cap detail line -->
+  <line x1="30" y1="235" x2="70" y2="235"
+        stroke="#a0785a" stroke-width="1"/>
+
+  <!-- Bottom of tube -->
+  <rect x="30" y="275" width="40" height="5" rx="2"
+        fill="#b07850" stroke="#a0785a" stroke-width="1"/>
+
+</svg>

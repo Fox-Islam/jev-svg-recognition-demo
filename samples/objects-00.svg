@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Backpack filled with books</title>
+  <desc id="desc">A colorful teal backpack with several books sticking out of the top.</desc>
+
+  <defs>
+    <linearGradient id="bag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b9c9a"/>
+      <stop offset="1" stop-color="#12636f"/>
+    </linearGradient>
+
+    <linearGradient id="flap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#49b7ae"/>
+      <stop offset="1" stop-color="#197985"/>
+    </linearGradient>
+
+    <linearGradient id="redBook" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f06a5f"/>
+      <stop offset="1" stop-color="#b83342"/>
+    </linearGradient>
+
+    <linearGradient id="blueBook" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5689dc"/>
+      <stop offset="1" stop-color="#3153a0"/>
+    </linearGradient>
+
+    <linearGradient id="goldBook" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd86a"/>
+      <stop offset="1" stop-color="#dc9b2d"/>
+    </linearGradient>
+
+    <linearGradient id="purpleBook" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9d76d8"/>
+      <stop offset="1" stop-color="#65449d"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#123c4a" flood-opacity=".22"/>
+    </filter>
+
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#123c4a" flood-opacity=".2"/>
+    </filter>
+  </defs>
+
+  <!-- Soft background -->
+  <circle cx="400" cy="390" r="330" fill="#eef8f6"/>
+  <ellipse cx="400" cy="707" rx="245" ry="28" fill="#9fc5c5" opacity=".35"/>
+
+  <!-- Shoulder straps behind the bag -->
+  <path d="M226 250 C170 290 157 420 180 565"
+        fill="none" stroke="#164f60" stroke-width="48" stroke-linecap="round"/>
+  <path d="M574 250 C630 290 643 420 620 565"
+        fill="none" stroke="#164f60" stroke-width="48" stroke-linecap="round"/>
+  <path d="M226 250 C182 305 178 390 182 438"
+        fill="none" stroke="#3c8990" stroke-width="17" stroke-linecap="round"/>
+  <path d="M574 250 C618 305 622 390 618 438"
+        fill="none" stroke="#3c8990" stroke-width="17" stroke-linecap="round"/>
+
+  <!-- Books rising from the backpack -->
+  <g filter="url(#smallShadow)">
+    <!-- Purple book -->
+    <path d="M300 268 L323 118 Q325 107 336 108 L483 131 L459 283 Z"
+          fill="url(#purpleBook)" stroke="#4c347e" stroke-width="6"/>
+    <path d="M336 108 L349 126 L483 147" fill="none" stroke="#c2a6ed" stroke-width="5"/>
+    <path d="M323 118 L336 131 L459 151" fill="none" stroke="#714fa9" stroke-width="5"/>
+    <path d="M353 164 L451 180" stroke="#e7d9ff" stroke-width="5" opacity=".75"/>
+    <path d="M347 184 L444 200" stroke="#e7d9ff" stroke-width="4" opacity=".55"/>
+
+    <!-- Blue book -->
+    <path d="M215 270 L240 153 Q242 143 252 143 L410 172 L389 297 Z"
+          fill="url(#blueBook)" stroke="#294681" stroke-width="7"/>
+    <path d="M252 143 L264 159 L410 184" fill="none" stroke="#9cbfff" stroke-width="5"/>
+    <path d="M240 153 L253 167 L389 190" fill="none" stroke="#4168b6" stroke-width="5"/>
+    <path d="M275 197 L375 215" stroke="#dce8ff" stroke-width="5" opacity=".8"/>
+    <path d="M271 219 L371 237" stroke="#dce8ff" stroke-width="4" opacity=".55"/>
+
+    <!-- Gold book -->
+    <path d="M382 292 L401 142 Q403 131 414 132 L557 150 L545 305 Z"
+          fill="url(#goldBook)" stroke="#b87c27" stroke-width="7"/>
+    <path d="M414 132 L427 148 L557 164" fill="none" stroke="#fff0a9" stroke-width="5"/>
+    <path d="M401 142 L414 157 L545 175" fill="none" stroke="#d5962b" stroke-width="5"/>
+    <path d="M433 190 L523 201" stroke="#fff3ba" stroke-width="5" opacity=".8"/>
+    <path d="M430 213 L520 224" stroke="#fff3ba" stroke-width="4" opacity=".55"/>
+
+    <!-- Red book -->
+    <path d="M274 299 L293 180 Q295 169 306 170 L463 194 L447 323 Z"
+          fill="url(#redBook)" stroke="#9e2f3c" stroke-width="7"/>
+    <path d="M306 170 L319 187 L463 209" fill="none" stroke="#ffaaa0" stroke-width="5"/>
+    <path d="M293 180 L306 195 L447 218" fill="none" stroke="#c7434c" stroke-width="5"/>
+    <path d="M326 230 L423 245" stroke="#ffd0c5" stroke-width="5" opacity=".8"/>
+    <path d="M322 252 L419 267" stroke="#ffd0c5" stroke-width="4" opacity=".55"/>
+  </g>
+
+  <!-- Backpack body -->
+  <g filter="url(#shadow)">
+    <path d="M205 267
+             C205 238 229 218 259 218
+             L541 218
+             C571 218 595 238 595 267
+             L626 604
+             C629 638 602 666 568 666
+             L232 666
+             C198 666 171 638 174 604 Z"
+          fill="url(#bag)" stroke="#104f60" stroke-width="9"/>
+
+    <!-- Top opening -->
+    <path d="M205 267 C263 303 537 303 595 267
+             C590 231 565 214 537 214
+             L263 214 C235 214 210 231 205 267Z"
+          fill="#103f50" stroke="#104f60" stroke-width="7"/>
+    <path d="M224 260 C296 285 504 285 576 260"
+          fill="none" stroke="#6ed0c3" stroke-width="10" opacity=".75"/>
+
+    <!-- Front panel highlight -->
+    <path d="M219 327 C216 420 211 530 213 588"
+          fill="none" stroke="#5bc1b5" stroke-width="12" stroke-linecap="round" opacity=".48"/>
+    <path d="M581 327 C584 420 589 530 587 588"
+          fill="none" stroke="#0b5968" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+
+    <!-- Front pocket -->
+    <path d="M238 466
+             C238 446 253 432 273 432
+             L527 432
+             C547 432 562 446 562 466
+             L572 590
+             C574 614 555 631 532 631
+             L268 631
+             C245 631 226 614 228 590 Z"
+          fill="#247f88" stroke="#104f60" stroke-width="8"/>
+
+    <path d="M240 467 C322 492 478 492 560 467"
+          fill="none" stroke="#58b8b0" stroke-width="8" opacity=".65"/>
+
+    <!-- Pocket zipper -->
+    <path d="M259 466 L541 466" stroke="#d2e7d9" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="534" cy="466" r="10" fill="#f2bf4d" stroke="#a76b23" stroke-width="4"/>
+    <path d="M534 476 L534 490" stroke="#f2bf4d" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Front pocket label -->
+    <rect x="349" y="520" width="102" height="38" rx="10"
+          fill="#176773" stroke="#80d0c3" stroke-width="4"/>
+    <path d="M371 539 H429" stroke="#a9e3d7" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Main zipper -->
+    <path d="M244 303 C320 329 480 329 556 303"
+          fill="none" stroke="#d2e7d9" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="548" cy="306" r="11" fill="#f2bf4d" stroke="#a76b23" stroke-width="4"/>
+    <path d="M548 317 L548 333" stroke="#f2bf4d" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Bottom corners -->
+    <path d="M208 610 C222 642 246 654 277 657"
+          fill="none" stroke="#0c5665" stroke-width="8" opacity=".65"/>
+    <path d="M592 610 C578 642 554 654 523 657"
+          fill="none" stroke="#0c5665" stroke-width="8" opacity=".65"/>
+  </g>
+
+  <!-- Carry handle -->
+  <path d="M329 218 C330 169 470 169 471 218"
+        fill="none" stroke="#124e5e" stroke-width="25" stroke-linecap="round"/>
+  <path d="M339 215 C345 184 455 184 461 215"
+        fill="none" stroke="#58aaa8" stroke-width="8" stroke-linecap="round"/>
+</svg>

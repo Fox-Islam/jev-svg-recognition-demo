@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="A single red rose">
+  <defs>
+    <linearGradient id="stem" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#174d2b"/>
+      <stop offset="0.5" stop-color="#2f8a45"/>
+      <stop offset="1" stop-color="#123c25"/>
+    </linearGradient>
+
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#55a94d"/>
+      <stop offset="1" stop-color="#18572e"/>
+    </linearGradient>
+
+    <linearGradient id="petalOuter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6f0c22"/>
+      <stop offset="0.5" stop-color="#b91635"/>
+      <stop offset="1" stop-color="#e83b56"/>
+    </linearGradient>
+
+    <linearGradient id="petalRed" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#f45868"/>
+      <stop offset="0.55" stop-color="#c7193b"/>
+      <stop offset="1" stop-color="#7d0c28"/>
+    </linearGradient>
+
+    <linearGradient id="petalLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8290"/>
+      <stop offset="0.5" stop-color="#ed3552"/>
+      <stop offset="1" stop-color="#a30e31"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#3b0715" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Stem -->
+  <path
+    d="M207 236
+       C202 291 213 335 203 382
+       C197 411 185 441 172 472"
+    fill="none"
+    stroke="url(#stem)"
+    stroke-width="13"
+    stroke-linecap="round"/>
+
+  <path
+    d="M207 236
+       C202 291 213 335 203 382
+       C197 411 185 441 172 472"
+    fill="none"
+    stroke="#69aa55"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    opacity="0.55"/>
+
+  <!-- Leaves -->
+  <path
+    d="M201 343
+       C164 309 119 312 91 340
+       C126 363 165 368 202 349 Z"
+    fill="url(#leaf)"
+    stroke="#164a29"
+    stroke-width="3"/>
+
+  <path
+    d="M202 348
+       C163 341 128 339 96 342"
+    fill="none"
+    stroke="#8ac86a"
+    stroke-width="2"
+    opacity="0.7"/>
+
+  <path
+    d="M197 402
+       C228 363 275 357 310 379
+       C282 411 240 420 197 408 Z"
+    fill="url(#leaf)"
+    stroke="#164a29"
+    stroke-width="3"/>
+
+  <path
+    d="M202 405
+       C238 392 272 384 304 381"
+    fill="none"
+    stroke="#8ac86a"
+    stroke-width="2"
+    opacity="0.7"/>
+
+  <!-- Rose bloom -->
+  <g filter="url(#shadow)">
+    <!-- Outer petals -->
+    <path
+      d="M201 246
+         C165 253 124 235 108 207
+         C91 178 101 145 127 126
+         C117 95 141 70 173 70
+         C190 47 228 50 244 76
+         C277 67 302 91 299 121
+         C328 137 327 174 306 193
+         C306 226 271 245 242 238
+         C229 253 211 254 201 246 Z"
+      fill="url(#petalOuter)"
+      stroke="#69091f"
+      stroke-width="3"/>
+
+    <!-- Left outer fold -->
+    <path
+      d="M130 126
+         C101 151 107 192 132 214
+         C150 230 174 235 197 228
+         C169 210 158 181 164 151
+         C155 138 143 130 130 126 Z"
+      fill="#97112e"/>
+
+    <!-- Right outer fold -->
+    <path
+      d="M244 78
+         C277 73 298 95 296 123
+         C316 142 314 174 294 193
+         C278 208 260 216 239 216
+         C257 191 263 155 251 127
+         C258 108 255 91 244 78 Z"
+      fill="#a30f2e"/>
+
+    <!-- Broad front petal -->
+    <path
+      d="M197 226
+         C164 220 143 195 145 166
+         C147 137 170 112 198 106
+         C230 111 251 139 250 170
+         C249 200 229 222 197 226 Z"
+      fill="url(#petalRed)"
+      stroke="#8e0d29"
+      stroke-width="2"/>
+
+    <!-- Upper left petal -->
+    <path
+      d="M128 126
+         C137 96 166 82 194 96
+         C207 103 214 114 215 128
+         C190 119 169 127 151 148
+         C143 139 135 132 128 126 Z"
+      fill="url(#petalLight)"
+      stroke="#a51232"
+      stroke-width="2"/>
+
+    <!-- Upper right petal -->
+    <path
+      d="M194 96
+         C216 72 252 78 263 104
+         C271 122 263 140 249 151
+         C238 128 218 113 194 96 Z"
+      fill="#db2948"
+      stroke="#94102b"
+      stroke-width="2"/>
+
+    <!-- Inner curling petal -->
+    <path
+      d="M151 148
+         C160 120 189 111 211 126
+         C225 136 228 152 220 164
+         C213 174 199 177 187 171
+         C179 166 179 155 186 149
+         C193 143 203 145 207 151
+         C211 142 203 133 193 132
+         C177 130 164 141 158 158 Z"
+      fill="url(#petalLight)"
+      stroke="#9b102e"
+      stroke-width="2"/>
+
+    <!-- Center -->
+    <path
+      d="M187 171
+         C176 163 178 149 188 143
+         C198 137 211 143 214 153
+         C217 163 210 174 200 178
+         C194 180 190 177 187 171 Z"
+      fill="#8c0c29"/>
+
+    <path
+      d="M191 162
+         C189 154 195 149 201 151
+         C207 153 207 160 203 164
+         C199 168 193 167 191 162 Z"
+      fill="#f15a67"/>
+
+    <!-- Lower highlight -->
+    <path
+      d="M149 188
+         C162 213 183 224 204 222
+         C180 216 168 196 168 174
+         C161 180 154 185 149 188 Z"
+      fill="#f04b61"
+      opacity="0.7"/>
+
+    <!-- Petal highlights -->
+    <path
+      d="M139 113 C151 91 174 84 191 91"
+      fill="none"
+      stroke="#ff8892"
+      stroke-width="5"
+      stroke-linecap="round"
+      opacity="0.55"/>
+
+    <path
+      d="M268 107 C281 116 284 130 281 141"
+      fill="none"
+      stroke="#ff7180"
+      stroke-width="4"
+      stroke-linecap="round"
+      opacity="0.45"/>
+  </g>
+</svg>
